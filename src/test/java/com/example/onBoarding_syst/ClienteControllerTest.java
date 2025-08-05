@@ -57,4 +57,15 @@ public class ClienteControllerTest {
                 .andExpect(status().isBadRequest())
                 .andExpect(jsonPath("$.errors").isArray());
     }
+    
+    @Test
+    void quandoEmailMancante_allora400() throws Exception {
+        Cliente cliente = new Cliente("Mario", "Rossi", "", "IN_CORSO");
+
+        mockMvc.perform(post("/api/clienti")
+                .contentType(MediaType.APPLICATION_JSON)
+                .content(objectMapper.writeValueAsString(cliente)))
+                .andExpect(status().isBadRequest());
+    }
+
 }
