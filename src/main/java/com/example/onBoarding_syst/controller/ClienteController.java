@@ -6,6 +6,7 @@ import com.example.onBoarding_syst.repositories.ClienteRepos;
 import jakarta.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -24,8 +25,9 @@ public class ClienteController {
     }
 
     @PostMapping
-    public Cliente createCliente(@Valid @RequestBody Cliente cliente) {
-        return clienteRepository.save(cliente);
+    public ResponseEntity<Cliente> createCliente(@Valid @RequestBody Cliente cliente) {
+    	Cliente saved = clienteRepository.save(cliente);
+        return ResponseEntity.status(HttpStatus.CREATED).body(saved);
     }
 
     @GetMapping("/{id}")
