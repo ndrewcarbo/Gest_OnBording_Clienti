@@ -11,6 +11,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Optional;
 import java.util.UUID;
 
 //@CrossOrigin(origins = "http://localhost:4200")
@@ -42,16 +43,21 @@ public class ClienteController {
     }
 
     @PutMapping("/{id}")
-    public Cliente updateCliente(@PathVariable String id, @RequestBody Cliente clienteDetails) {
-        Cliente cliente = clienteRepository.findById(id).orElse(null);
-        if (cliente == null) return null;
+    public ResponseEntity<Cliente> updateCliente(@PathVariable String id, @RequestBody Cliente clienteDetails) {
+        Optional<Cliente> clienteMod = clienteRepository.findById(id);
+        if (clienteMod.isEmpty()) {
+            return ResponseEntity.notFound().build(); 
+        }
 
+        Cliente cliente = clienteMod.get();
+        
         cliente.setNome(clienteDetails.getNome());
         cliente.setCognome(clienteDetails.getCognome());
         cliente.setEmail(clienteDetails.getEmail());
         cliente.setStatoOnboarding(clienteDetails.getStatoOnboarding());
 
-        return clienteRepository.save(cliente);
+        Cliente modificato = clienteRepository.save(cliente);
+        return ResponseEntity.ok(modificato); 
     }
 
     @DeleteMapping("/{id}")
