@@ -11,6 +11,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.UUID;
 
 //@CrossOrigin(origins = "http://localhost:4200")
 @RestController
@@ -27,8 +28,12 @@ public class ClienteController {
 
     @PostMapping
     public ResponseEntity<Cliente> createCliente(@Valid @RequestBody Cliente cliente) {
-    	Cliente saved = clienteRepository.save(cliente);
-        return ResponseEntity.status(HttpStatus.CREATED).body(saved);
+    	if (cliente.getId() == null) {
+            cliente.setId(UUID.randomUUID().toString()); 
+        }
+    	
+    	Cliente clienteSalvato = clienteRepository.save(cliente);
+        return ResponseEntity.ok(clienteSalvato);
     }
 
     @GetMapping("/{id}")
@@ -50,8 +55,11 @@ public class ClienteController {
     }
 
     @DeleteMapping("/{id}")
-    public void deleteCliente(@PathVariable String id) {
+    public ResponseEntity<Void> deleteCliente(@PathVariable String id) {
+    	System.out.println("Eliminazione cliente con id: " + id); //per dubug
+    	
         clienteRepository.deleteById(id);
+        return ResponseEntity.noContent().build();
     }
     
     @GetMapping("/email/{email}")

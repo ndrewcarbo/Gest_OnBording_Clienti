@@ -3,7 +3,7 @@ package com.example.onBoarding_syst;
 import com.example.onBoarding_syst.model.Cliente;
 import com.example.onBoarding_syst.repositories.ClienteRepos;
 
-import jakarta.validation.ConstraintViolationException;
+//import jakarta.validation.ConstraintViolationException;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
