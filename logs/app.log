@@ -1,0 +1,941 @@
+2025-08-12T11:59:59.119+02:00  INFO 26700 --- [onBoarding-syst] [restartedMain] c.e.o.OnBoardingSystApplication          : Starting OnBoardingSystApplication using Java 21.0.6 with PID 26700 (C:\Users\a.carbone\Desktop\Gest_OnBording_Clienti\target\classes started by a.carbone in C:\Users\a.carbone\Desktop\Gest_OnBording_Clienti)
+2025-08-12T11:59:59.120+02:00 DEBUG 26700 --- [onBoarding-syst] [restartedMain] c.e.o.OnBoardingSystApplication          : Running with Spring Boot v3.2.5, Spring v6.1.6
+2025-08-12T11:59:59.121+02:00  INFO 26700 --- [onBoarding-syst] [restartedMain] c.e.o.OnBoardingSystApplication          : No active profile set, falling back to 1 default profile: "default"
+2025-08-12T11:59:59.169+02:00  INFO 26700 --- [onBoarding-syst] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-08-12T11:59:59.170+02:00  INFO 26700 --- [onBoarding-syst] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-08-12T12:00:00.218+02:00  INFO 26700 --- [onBoarding-syst] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2025-08-12T12:00:00.307+02:00  INFO 26700 --- [onBoarding-syst] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 81 ms. Found 1 MongoDB repository interface.
+2025-08-12T12:00:00.882+02:00  INFO 26700 --- [onBoarding-syst] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-08-12T12:00:00.903+02:00  INFO 26700 --- [onBoarding-syst] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-12T12:00:00.904+02:00  INFO 26700 --- [onBoarding-syst] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2025-08-12T12:00:00.970+02:00  INFO 26700 --- [onBoarding-syst] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-12T12:00:00.970+02:00  INFO 26700 --- [onBoarding-syst] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1799 ms
+2025-08-12T12:00:01.128+02:00 DEBUG 26700 --- [onBoarding-syst] [restartedMain] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2025-08-12T12:00:01.145+02:00  WARN 26700 --- [onBoarding-syst] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'authController': Unsatisfied dependency expressed through field 'jwtService': No qualifying bean of type 'Services.JwtService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2025-08-12T12:00:01.149+02:00  INFO 26700 --- [onBoarding-syst] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-08-12T12:00:01.163+02:00  INFO 26700 --- [onBoarding-syst] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-08-12T12:00:01.185+02:00 ERROR 26700 --- [onBoarding-syst] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field jwtService in com.example.onBoarding_syst.controller.AuthController required a bean of type 'Services.JwtService' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'Services.JwtService' in your configuration.
+
+2025-08-12T12:00:39.737+02:00  INFO 7492 --- [onBoarding-syst] [restartedMain] c.e.o.OnBoardingSystApplication          : Starting OnBoardingSystApplication using Java 21.0.6 with PID 7492 (C:\Users\a.carbone\Desktop\Gest_OnBording_Clienti\target\classes started by a.carbone in C:\Users\a.carbone\Desktop\Gest_OnBording_Clienti)
+2025-08-12T12:00:39.739+02:00 DEBUG 7492 --- [onBoarding-syst] [restartedMain] c.e.o.OnBoardingSystApplication          : Running with Spring Boot v3.2.5, Spring v6.1.6
+2025-08-12T12:00:39.739+02:00  INFO 7492 --- [onBoarding-syst] [restartedMain] c.e.o.OnBoardingSystApplication          : No active profile set, falling back to 1 default profile: "default"
+2025-08-12T12:00:39.771+02:00  INFO 7492 --- [onBoarding-syst] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-08-12T12:00:39.772+02:00  INFO 7492 --- [onBoarding-syst] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-08-12T12:00:40.693+02:00  INFO 7492 --- [onBoarding-syst] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2025-08-12T12:00:40.747+02:00  INFO 7492 --- [onBoarding-syst] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 49 ms. Found 1 MongoDB repository interface.
+2025-08-12T12:00:41.151+02:00  INFO 7492 --- [onBoarding-syst] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-08-12T12:00:41.162+02:00  INFO 7492 --- [onBoarding-syst] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-12T12:00:41.162+02:00  INFO 7492 --- [onBoarding-syst] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2025-08-12T12:00:41.206+02:00  INFO 7492 --- [onBoarding-syst] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-12T12:00:41.206+02:00  INFO 7492 --- [onBoarding-syst] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1434 ms
+2025-08-12T12:00:41.329+02:00 DEBUG 7492 --- [onBoarding-syst] [restartedMain] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2025-08-12T12:00:41.346+02:00  WARN 7492 --- [onBoarding-syst] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'authController': Unsatisfied dependency expressed through field 'jwtService': No qualifying bean of type 'Services.JwtService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2025-08-12T12:00:41.350+02:00  INFO 7492 --- [onBoarding-syst] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-08-12T12:00:41.366+02:00  INFO 7492 --- [onBoarding-syst] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-08-12T12:00:41.383+02:00 ERROR 7492 --- [onBoarding-syst] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field jwtService in com.example.onBoarding_syst.controller.AuthController required a bean of type 'Services.JwtService' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'Services.JwtService' in your configuration.
+
+2025-08-12T12:01:12.193+02:00  INFO 25236 --- [onBoarding-syst] [restartedMain] c.e.o.OnBoardingSystApplication          : Starting OnBoardingSystApplication using Java 21.0.6 with PID 25236 (C:\Users\a.carbone\Desktop\Gest_OnBording_Clienti\target\classes started by a.carbone in C:\Users\a.carbone\Desktop\Gest_OnBording_Clienti)
+2025-08-12T12:01:12.195+02:00 DEBUG 25236 --- [onBoarding-syst] [restartedMain] c.e.o.OnBoardingSystApplication          : Running with Spring Boot v3.2.5, Spring v6.1.6
+2025-08-12T12:01:12.196+02:00  INFO 25236 --- [onBoarding-syst] [restartedMain] c.e.o.OnBoardingSystApplication          : No active profile set, falling back to 1 default profile: "default"
+2025-08-12T12:01:12.240+02:00  INFO 25236 --- [onBoarding-syst] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-08-12T12:01:12.240+02:00  INFO 25236 --- [onBoarding-syst] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-08-12T12:01:12.871+02:00  INFO 25236 --- [onBoarding-syst] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2025-08-12T12:01:12.907+02:00  INFO 25236 --- [onBoarding-syst] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 32 ms. Found 1 MongoDB repository interface.
+2025-08-12T12:01:13.218+02:00  INFO 25236 --- [onBoarding-syst] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-08-12T12:01:13.227+02:00  INFO 25236 --- [onBoarding-syst] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-12T12:01:13.228+02:00  INFO 25236 --- [onBoarding-syst] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2025-08-12T12:01:13.272+02:00  INFO 25236 --- [onBoarding-syst] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-12T12:01:13.273+02:00  INFO 25236 --- [onBoarding-syst] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1033 ms
+2025-08-12T12:01:13.375+02:00 DEBUG 25236 --- [onBoarding-syst] [restartedMain] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2025-08-12T12:01:13.389+02:00  WARN 25236 --- [onBoarding-syst] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'authController': Unsatisfied dependency expressed through field 'jwtService': No qualifying bean of type 'Services.JwtService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2025-08-12T12:01:13.391+02:00  INFO 25236 --- [onBoarding-syst] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-08-12T12:01:13.404+02:00  INFO 25236 --- [onBoarding-syst] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-08-12T12:01:13.420+02:00 ERROR 25236 --- [onBoarding-syst] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field jwtService in com.example.onBoarding_syst.controller.AuthController required a bean of type 'Services.JwtService' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'Services.JwtService' in your configuration.
+
+2025-08-12T12:02:35.778+02:00  INFO 1992 --- [onBoarding-syst] [restartedMain] c.e.o.OnBoardingSystApplication          : Starting OnBoardingSystApplication using Java 21.0.6 with PID 1992 (C:\Users\a.carbone\Desktop\Gest_OnBording_Clienti\target\classes started by a.carbone in C:\Users\a.carbone\Desktop\Gest_OnBording_Clienti)
+2025-08-12T12:02:35.779+02:00 DEBUG 1992 --- [onBoarding-syst] [restartedMain] c.e.o.OnBoardingSystApplication          : Running with Spring Boot v3.2.5, Spring v6.1.6
+2025-08-12T12:02:35.780+02:00  INFO 1992 --- [onBoarding-syst] [restartedMain] c.e.o.OnBoardingSystApplication          : No active profile set, falling back to 1 default profile: "default"
+2025-08-12T12:02:35.819+02:00  INFO 1992 --- [onBoarding-syst] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-08-12T12:02:35.820+02:00  INFO 1992 --- [onBoarding-syst] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-08-12T12:02:36.480+02:00  INFO 1992 --- [onBoarding-syst] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2025-08-12T12:02:36.519+02:00  INFO 1992 --- [onBoarding-syst] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 33 ms. Found 1 MongoDB repository interface.
+2025-08-12T12:02:36.824+02:00  INFO 1992 --- [onBoarding-syst] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-08-12T12:02:36.832+02:00  INFO 1992 --- [onBoarding-syst] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-12T12:02:36.832+02:00  INFO 1992 --- [onBoarding-syst] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2025-08-12T12:02:36.871+02:00  INFO 1992 --- [onBoarding-syst] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-12T12:02:36.872+02:00  INFO 1992 --- [onBoarding-syst] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1052 ms
+2025-08-12T12:02:36.967+02:00 DEBUG 1992 --- [onBoarding-syst] [restartedMain] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2025-08-12T12:02:36.979+02:00  WARN 1992 --- [onBoarding-syst] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'authController': Unsatisfied dependency expressed through field 'jwtService': No qualifying bean of type 'Services.JwtService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2025-08-12T12:02:36.982+02:00  INFO 1992 --- [onBoarding-syst] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-08-12T12:02:36.993+02:00  INFO 1992 --- [onBoarding-syst] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-08-12T12:02:37.012+02:00 ERROR 1992 --- [onBoarding-syst] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field jwtService in com.example.onBoarding_syst.controller.AuthController required a bean of type 'Services.JwtService' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'Services.JwtService' in your configuration.
+
+2025-08-12T12:08:36.817+02:00  INFO 11164 --- [onBoarding-syst] [restartedMain] c.e.o.OnBoardingSystApplication          : Starting OnBoardingSystApplication using Java 21.0.6 with PID 11164 (C:\Users\a.carbone\Desktop\Gest_OnBording_Clienti\target\classes started by a.carbone in C:\Users\a.carbone\Desktop\Gest_OnBording_Clienti)
+2025-08-12T12:08:36.818+02:00 DEBUG 11164 --- [onBoarding-syst] [restartedMain] c.e.o.OnBoardingSystApplication          : Running with Spring Boot v3.2.5, Spring v6.1.6
+2025-08-12T12:08:36.819+02:00  INFO 11164 --- [onBoarding-syst] [restartedMain] c.e.o.OnBoardingSystApplication          : No active profile set, falling back to 1 default profile: "default"
+2025-08-12T12:08:36.847+02:00  INFO 11164 --- [onBoarding-syst] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-08-12T12:08:36.847+02:00  INFO 11164 --- [onBoarding-syst] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-08-12T12:08:37.457+02:00  INFO 11164 --- [onBoarding-syst] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2025-08-12T12:08:37.492+02:00  INFO 11164 --- [onBoarding-syst] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 32 ms. Found 1 MongoDB repository interface.
+2025-08-12T12:08:37.808+02:00  INFO 11164 --- [onBoarding-syst] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-08-12T12:08:37.818+02:00  INFO 11164 --- [onBoarding-syst] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-12T12:08:37.818+02:00  INFO 11164 --- [onBoarding-syst] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2025-08-12T12:08:37.859+02:00  INFO 11164 --- [onBoarding-syst] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-12T12:08:37.859+02:00  INFO 11164 --- [onBoarding-syst] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1012 ms
+2025-08-12T12:08:37.953+02:00 DEBUG 11164 --- [onBoarding-syst] [restartedMain] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2025-08-12T12:08:37.967+02:00  WARN 11164 --- [onBoarding-syst] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'authController': Unsatisfied dependency expressed through field 'jwtService': No qualifying bean of type 'services.JwtService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2025-08-12T12:08:37.969+02:00  INFO 11164 --- [onBoarding-syst] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-08-12T12:08:37.981+02:00  INFO 11164 --- [onBoarding-syst] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-08-12T12:08:37.997+02:00 ERROR 11164 --- [onBoarding-syst] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field jwtService in com.example.onBoarding_syst.controller.AuthController required a bean of type 'services.JwtService' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'services.JwtService' in your configuration.
+
+2025-08-12T12:11:17.456+02:00  INFO 26032 --- [onBoarding-syst] [restartedMain] c.e.o.OnBoardingSystApplication          : Starting OnBoardingSystApplication using Java 21.0.6 with PID 26032 (C:\Users\a.carbone\Desktop\Gest_OnBording_Clienti\target\classes started by a.carbone in C:\Users\a.carbone\Desktop\Gest_OnBording_Clienti)
+2025-08-12T12:11:17.457+02:00 DEBUG 26032 --- [onBoarding-syst] [restartedMain] c.e.o.OnBoardingSystApplication          : Running with Spring Boot v3.2.5, Spring v6.1.6
+2025-08-12T12:11:17.457+02:00  INFO 26032 --- [onBoarding-syst] [restartedMain] c.e.o.OnBoardingSystApplication          : No active profile set, falling back to 1 default profile: "default"
+2025-08-12T12:11:17.496+02:00  INFO 26032 --- [onBoarding-syst] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-08-12T12:11:17.497+02:00  INFO 26032 --- [onBoarding-syst] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-08-12T12:11:18.123+02:00  INFO 26032 --- [onBoarding-syst] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2025-08-12T12:11:18.160+02:00  INFO 26032 --- [onBoarding-syst] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 32 ms. Found 1 MongoDB repository interface.
+2025-08-12T12:11:18.476+02:00  INFO 26032 --- [onBoarding-syst] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-08-12T12:11:18.487+02:00  INFO 26032 --- [onBoarding-syst] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-12T12:11:18.487+02:00  INFO 26032 --- [onBoarding-syst] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2025-08-12T12:11:18.532+02:00  INFO 26032 --- [onBoarding-syst] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-12T12:11:18.532+02:00  INFO 26032 --- [onBoarding-syst] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1035 ms
+2025-08-12T12:11:18.635+02:00 DEBUG 26032 --- [onBoarding-syst] [restartedMain] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2025-08-12T12:11:18.658+02:00  WARN 26032 --- [onBoarding-syst] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'authController': Unsatisfied dependency expressed through field 'jwtService': No qualifying bean of type 'services.JwtService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2025-08-12T12:11:18.661+02:00  INFO 26032 --- [onBoarding-syst] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-08-12T12:11:18.676+02:00  INFO 26032 --- [onBoarding-syst] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-08-12T12:11:18.693+02:00 ERROR 26032 --- [onBoarding-syst] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field jwtService in com.example.onBoarding_syst.controller.AuthController required a bean of type 'services.JwtService' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'services.JwtService' in your configuration.
+
+2025-08-12T12:15:42.650+02:00  INFO 27308 --- [onBoarding-syst] [restartedMain] c.e.o.OnBoardingSystApplication          : Starting OnBoardingSystApplication using Java 21.0.6 with PID 27308 (C:\Users\a.carbone\Desktop\Gest_OnBording_Clienti\target\classes started by a.carbone in C:\Users\a.carbone\Desktop\Gest_OnBording_Clienti)
+2025-08-12T12:15:42.651+02:00 DEBUG 27308 --- [onBoarding-syst] [restartedMain] c.e.o.OnBoardingSystApplication          : Running with Spring Boot v3.2.5, Spring v6.1.6
+2025-08-12T12:15:42.652+02:00  INFO 27308 --- [onBoarding-syst] [restartedMain] c.e.o.OnBoardingSystApplication          : No active profile set, falling back to 1 default profile: "default"
+2025-08-12T12:15:42.683+02:00  INFO 27308 --- [onBoarding-syst] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-08-12T12:15:42.683+02:00  INFO 27308 --- [onBoarding-syst] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-08-12T12:15:43.322+02:00  INFO 27308 --- [onBoarding-syst] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2025-08-12T12:15:43.356+02:00  INFO 27308 --- [onBoarding-syst] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 31 ms. Found 1 MongoDB repository interface.
+2025-08-12T12:15:43.664+02:00  INFO 27308 --- [onBoarding-syst] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-08-12T12:15:43.673+02:00  INFO 27308 --- [onBoarding-syst] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-12T12:15:43.673+02:00  INFO 27308 --- [onBoarding-syst] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2025-08-12T12:15:43.708+02:00  INFO 27308 --- [onBoarding-syst] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-12T12:15:43.709+02:00  INFO 27308 --- [onBoarding-syst] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1026 ms
+2025-08-12T12:15:43.811+02:00 DEBUG 27308 --- [onBoarding-syst] [restartedMain] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2025-08-12T12:15:43.822+02:00  WARN 27308 --- [onBoarding-syst] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'authController' defined in file [C:\Users\a.carbone\Desktop\Gest_OnBording_Clienti\target\classes\com\example\onBoarding_syst\controller\AuthController.class]: Failed to instantiate [com.example.onBoarding_syst.controller.AuthController]: Constructor threw exception
+2025-08-12T12:15:43.824+02:00  INFO 27308 --- [onBoarding-syst] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-08-12T12:15:43.837+02:00  INFO 27308 --- [onBoarding-syst] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-08-12T12:15:43.852+02:00 ERROR 27308 --- [onBoarding-syst] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'authController' defined in file [C:\Users\a.carbone\Desktop\Gest_OnBording_Clienti\target\classes\com\example\onBoarding_syst\controller\AuthController.class]: Failed to instantiate [com.example.onBoarding_syst.controller.AuthController]: Constructor threw exception
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1317) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1202) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:962) ~[spring-context-6.1.6.jar:6.1.6]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624) ~[spring-context-6.1.6.jar:6.1.6]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) ~[spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334) ~[spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354) ~[spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343) ~[spring-boot-3.2.5.jar:3.2.5]
+	at com.example.onBoarding_syst.OnBoardingSystApplication.main(OnBoardingSystApplication.java:10) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.2.5.jar:3.2.5]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.example.onBoarding_syst.controller.AuthController]: Constructor threw exception
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:221) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:88) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1311) ~[spring-beans-6.1.6.jar:6.1.6]
+	... 20 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problems: 
+	The import Filters cannot be resolved
+	The import services cannot be resolved
+	JwtService cannot be resolved to a type
+	JwtService cannot be resolved to a type
+	Risposta cannot be resolved to a type
+
+	at com.example.onBoarding_syst.controller.AuthController.<init>(AuthController.java:15) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486) ~[na:na]
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:195) ~[spring-beans-6.1.6.jar:6.1.6]
+	... 22 common frames omitted
+
+2025-08-12T12:23:02.448+02:00  INFO 25676 --- [onBoarding-syst] [restartedMain] c.e.o.OnBoardingSystApplication          : Starting OnBoardingSystApplication using Java 21.0.6 with PID 25676 (C:\Users\a.carbone\Desktop\Gest_OnBording_Clienti\target\classes started by a.carbone in C:\Users\a.carbone\Desktop\Gest_OnBording_Clienti)
+2025-08-12T12:23:02.450+02:00 DEBUG 25676 --- [onBoarding-syst] [restartedMain] c.e.o.OnBoardingSystApplication          : Running with Spring Boot v3.2.5, Spring v6.1.6
+2025-08-12T12:23:02.451+02:00  INFO 25676 --- [onBoarding-syst] [restartedMain] c.e.o.OnBoardingSystApplication          : No active profile set, falling back to 1 default profile: "default"
+2025-08-12T12:23:02.490+02:00  INFO 25676 --- [onBoarding-syst] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-08-12T12:23:02.490+02:00  INFO 25676 --- [onBoarding-syst] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-08-12T12:23:03.132+02:00  INFO 25676 --- [onBoarding-syst] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2025-08-12T12:23:03.175+02:00  INFO 25676 --- [onBoarding-syst] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 40 ms. Found 1 MongoDB repository interface.
+2025-08-12T12:23:03.583+02:00  INFO 25676 --- [onBoarding-syst] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-08-12T12:23:03.596+02:00  INFO 25676 --- [onBoarding-syst] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-12T12:23:03.597+02:00  INFO 25676 --- [onBoarding-syst] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2025-08-12T12:23:03.650+02:00  INFO 25676 --- [onBoarding-syst] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-12T12:23:03.650+02:00  INFO 25676 --- [onBoarding-syst] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1159 ms
+2025-08-12T12:23:03.787+02:00 DEBUG 25676 --- [onBoarding-syst] [restartedMain] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2025-08-12T12:23:03.949+02:00  INFO 25676 --- [onBoarding-syst] [restartedMain] org.mongodb.driver.client                : MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.11.2"}, "os": {"type": "Windows", "name": "Windows 11", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Eclipse Adoptium/21.0.6+7-LTS"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=null, streamFactoryFactory=null, commandListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsCommandListener@409af39], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@3bb52964, com.mongodb.Jep395RecordCodecProvider@334b8748, com.mongodb.KotlinCodecProvider@57168242]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsConnectionPoolListener@1eaf8ffe], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null}
+2025-08-12T12:23:03.995+02:00  INFO 25676 --- [onBoarding-syst] [cluster-ClusterId{value='689b16074e43ba4df44652db', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=32659600}
+2025-08-12T12:23:04.117+02:00  INFO 25676 --- [onBoarding-syst] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-08-12T12:23:04.259+02:00  WARN 25676 --- [onBoarding-syst] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'securityConfig': Unsatisfied dependency expressed through field 'jwtFilter': No qualifying bean of type 'com.example.onBoarding_syst.JwtAuthFilter' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2025-08-12T12:23:04.265+02:00  INFO 25676 --- [onBoarding-syst] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-08-12T12:23:04.279+02:00  INFO 25676 --- [onBoarding-syst] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-08-12T12:23:04.297+02:00 ERROR 25676 --- [onBoarding-syst] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field jwtFilter in com.example.onBoarding_syst.SecurityConfig required a bean of type 'com.example.onBoarding_syst.JwtAuthFilter' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.example.onBoarding_syst.JwtAuthFilter' in your configuration.
+
+2025-08-12T12:24:31.877+02:00  INFO 20152 --- [onBoarding-syst] [restartedMain] c.e.o.OnBoardingSystApplication          : Starting OnBoardingSystApplication using Java 21.0.6 with PID 20152 (C:\Users\a.carbone\Desktop\Gest_OnBording_Clienti\target\classes started by a.carbone in C:\Users\a.carbone\Desktop\Gest_OnBording_Clienti)
+2025-08-12T12:24:31.879+02:00 DEBUG 20152 --- [onBoarding-syst] [restartedMain] c.e.o.OnBoardingSystApplication          : Running with Spring Boot v3.2.5, Spring v6.1.6
+2025-08-12T12:24:31.880+02:00  INFO 20152 --- [onBoarding-syst] [restartedMain] c.e.o.OnBoardingSystApplication          : No active profile set, falling back to 1 default profile: "default"
+2025-08-12T12:24:31.909+02:00  INFO 20152 --- [onBoarding-syst] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-08-12T12:24:31.909+02:00  INFO 20152 --- [onBoarding-syst] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-08-12T12:24:32.525+02:00  INFO 20152 --- [onBoarding-syst] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2025-08-12T12:24:32.558+02:00  INFO 20152 --- [onBoarding-syst] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 30 ms. Found 1 MongoDB repository interface.
+2025-08-12T12:24:32.860+02:00  INFO 20152 --- [onBoarding-syst] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-08-12T12:24:32.871+02:00  INFO 20152 --- [onBoarding-syst] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-12T12:24:32.872+02:00  INFO 20152 --- [onBoarding-syst] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2025-08-12T12:24:32.909+02:00  INFO 20152 --- [onBoarding-syst] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-12T12:24:32.909+02:00  INFO 20152 --- [onBoarding-syst] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1000 ms
+2025-08-12T12:24:33.008+02:00 DEBUG 20152 --- [onBoarding-syst] [restartedMain] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2025-08-12T12:24:33.009+02:00 DEBUG 20152 --- [onBoarding-syst] [restartedMain] c.example.onBoarding_syst.JwtAuthFilter  : Filter 'jwtAuthFilter' configured for use
+2025-08-12T12:24:33.123+02:00  INFO 20152 --- [onBoarding-syst] [restartedMain] org.mongodb.driver.client                : MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.11.2"}, "os": {"type": "Windows", "name": "Windows 11", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Eclipse Adoptium/21.0.6+7-LTS"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=null, streamFactoryFactory=null, commandListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsCommandListener@71569493], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@f917f04, com.mongodb.Jep395RecordCodecProvider@490e815, com.mongodb.KotlinCodecProvider@619850b6]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsConnectionPoolListener@242fb21a], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null}
+2025-08-12T12:24:33.166+02:00  INFO 20152 --- [onBoarding-syst] [cluster-ClusterId{value='689b166174dfe22d23c77629', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=31767300}
+2025-08-12T12:24:33.241+02:00  INFO 20152 --- [onBoarding-syst] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-08-12T12:24:33.386+02:00  WARN 20152 --- [onBoarding-syst] [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 57aaad8f-9986-485b-a94c-a33fff7337fd
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-08-12T12:24:33.501+02:00 DEBUG 20152 --- [onBoarding-syst] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 10 mappings in 'requestMappingHandlerMapping'
+2025-08-12T12:24:33.548+02:00 DEBUG 20152 --- [onBoarding-syst] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-08-12T12:24:33.630+02:00  INFO 20152 --- [onBoarding-syst] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 4 endpoint(s) beneath base path '/actuator'
+2025-08-12T12:24:33.664+02:00  INFO 20152 --- [onBoarding-syst] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@658e3f27, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4ada0c13, org.springframework.security.web.context.SecurityContextHolderFilter@7797f272, org.springframework.security.web.header.HeaderWriterFilter@442cf332, org.springframework.web.filter.CorsFilter@7aedd904, org.springframework.security.web.authentication.logout.LogoutFilter@49c0f485, com.example.onBoarding_syst.JwtAuthFilter@57b3ff43, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@62e9ef51, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@115f98e9, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7b851624, org.springframework.security.web.access.ExceptionTranslationFilter@309a4dc, org.springframework.security.web.access.intercept.AuthorizationFilter@419ddcd1]
+2025-08-12T12:24:33.712+02:00 DEBUG 20152 --- [onBoarding-syst] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-08-12T12:24:33.737+02:00 DEBUG 20152 --- [onBoarding-syst] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-08-12T12:24:33.870+02:00  INFO 20152 --- [onBoarding-syst] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path ''
+2025-08-12T12:24:33.878+02:00  INFO 20152 --- [onBoarding-syst] [restartedMain] c.e.o.OnBoardingSystApplication          : Started OnBoardingSystApplication in 2.262 seconds (process running for 2.75)
+2025-08-12T12:24:34.501+02:00  INFO 20152 --- [onBoarding-syst] [RMI TCP Connection(7)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-12T12:24:34.502+02:00  INFO 20152 --- [onBoarding-syst] [RMI TCP Connection(7)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-12T12:24:34.502+02:00 DEBUG 20152 --- [onBoarding-syst] [RMI TCP Connection(7)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2025-08-12T12:24:34.502+02:00 DEBUG 20152 --- [onBoarding-syst] [RMI TCP Connection(7)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2025-08-12T12:24:34.502+02:00 DEBUG 20152 --- [onBoarding-syst] [RMI TCP Connection(7)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2025-08-12T12:24:34.503+02:00 DEBUG 20152 --- [onBoarding-syst] [RMI TCP Connection(7)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@5e82aaa5
+2025-08-12T12:24:34.503+02:00 DEBUG 20152 --- [onBoarding-syst] [RMI TCP Connection(7)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@5e72447b
+2025-08-12T12:24:34.504+02:00 DEBUG 20152 --- [onBoarding-syst] [RMI TCP Connection(7)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-08-12T12:24:34.504+02:00  INFO 20152 --- [onBoarding-syst] [RMI TCP Connection(7)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-08-12T12:25:36.022+02:00 DEBUG 20152 --- [onBoarding-syst] [http-nio-8081-exec-6] o.s.web.servlet.DispatcherServlet        : POST "/api/auth/login", parameters={}
+2025-08-12T12:25:36.026+02:00 DEBUG 20152 --- [onBoarding-syst] [http-nio-8081-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.onBoarding_syst.controller.AuthController#login(LoginDTO)
+2025-08-12T12:25:36.085+02:00 DEBUG 20152 --- [onBoarding-syst] [http-nio-8081-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.example.onBoarding_syst.model.LoginDTO@5614f04e]
+2025-08-12T12:25:36.161+02:00 DEBUG 20152 --- [onBoarding-syst] [http-nio-8081-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-08-12T12:25:36.163+02:00 DEBUG 20152 --- [onBoarding-syst] [http-nio-8081-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.example.onBoarding_syst.controller.Risposta@33f70958]
+2025-08-12T12:25:36.173+02:00 DEBUG 20152 --- [onBoarding-syst] [http-nio-8081-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-08-12T12:26:24.919+02:00 DEBUG 20152 --- [onBoarding-syst] [http-nio-8081-exec-10] o.s.web.servlet.DispatcherServlet        : POST "/api/auth/login", parameters={}
+2025-08-12T12:26:24.920+02:00 DEBUG 20152 --- [onBoarding-syst] [http-nio-8081-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.onBoarding_syst.controller.AuthController#login(LoginDTO)
+2025-08-12T12:26:24.922+02:00 DEBUG 20152 --- [onBoarding-syst] [http-nio-8081-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.example.onBoarding_syst.model.LoginDTO@6d81bbce]
+2025-08-12T12:26:24.926+02:00 DEBUG 20152 --- [onBoarding-syst] [http-nio-8081-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-08-12T12:26:24.927+02:00 DEBUG 20152 --- [onBoarding-syst] [http-nio-8081-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.example.onBoarding_syst.controller.Risposta@4c934eba]
+2025-08-12T12:26:24.929+02:00 DEBUG 20152 --- [onBoarding-syst] [http-nio-8081-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-08-12T12:35:34.427+02:00  INFO 20152 --- [onBoarding-syst] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-08-12T12:35:34.542+02:00  INFO 20152 --- [onBoarding-syst] [restartedMain] c.e.o.OnBoardingSystApplication          : Starting OnBoardingSystApplication using Java 21.0.6 with PID 20152 (C:\Users\a.carbone\Desktop\Gest_OnBording_Clienti\target\classes started by a.carbone in C:\Users\a.carbone\Desktop\Gest_OnBording_Clienti)
+2025-08-12T12:35:34.542+02:00 DEBUG 20152 --- [onBoarding-syst] [restartedMain] c.e.o.OnBoardingSystApplication          : Running with Spring Boot v3.2.5, Spring v6.1.6
+2025-08-12T12:35:34.542+02:00  INFO 20152 --- [onBoarding-syst] [restartedMain] c.e.o.OnBoardingSystApplication          : No active profile set, falling back to 1 default profile: "default"
+2025-08-12T12:35:34.745+02:00  INFO 20152 --- [onBoarding-syst] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2025-08-12T12:35:34.751+02:00  INFO 20152 --- [onBoarding-syst] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 1 MongoDB repository interface.
+2025-08-12T12:35:34.823+02:00  INFO 20152 --- [onBoarding-syst] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-08-12T12:35:34.825+02:00  INFO 20152 --- [onBoarding-syst] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-12T12:35:34.826+02:00  INFO 20152 --- [onBoarding-syst] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2025-08-12T12:35:34.846+02:00  INFO 20152 --- [onBoarding-syst] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-12T12:35:34.846+02:00  INFO 20152 --- [onBoarding-syst] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 302 ms
+2025-08-12T12:35:34.884+02:00 DEBUG 20152 --- [onBoarding-syst] [restartedMain] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2025-08-12T12:35:34.885+02:00 DEBUG 20152 --- [onBoarding-syst] [restartedMain] c.example.onBoarding_syst.JwtAuthFilter  : Filter 'jwtAuthFilter' configured for use
+2025-08-12T12:35:34.901+02:00  INFO 20152 --- [onBoarding-syst] [restartedMain] org.mongodb.driver.client                : MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.11.2"}, "os": {"type": "Windows", "name": "Windows 11", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Eclipse Adoptium/21.0.6+7-LTS"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=null, streamFactoryFactory=null, commandListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsCommandListener@2b218056], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@f917f04, com.mongodb.Jep395RecordCodecProvider@490e815, com.mongodb.KotlinCodecProvider@619850b6]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsConnectionPoolListener@71070487], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null}
+2025-08-12T12:35:34.916+02:00  INFO 20152 --- [onBoarding-syst] [cluster-ClusterId{value='689b18f674dfe22d23c7762a', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=1396600}
+2025-08-12T12:35:34.931+02:00  INFO 20152 --- [onBoarding-syst] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-08-12T12:35:34.973+02:00  WARN 20152 --- [onBoarding-syst] [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 2fce6c42-0d15-4812-b0f6-229e5be593eb
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-08-12T12:35:34.995+02:00 DEBUG 20152 --- [onBoarding-syst] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 10 mappings in 'requestMappingHandlerMapping'
+2025-08-12T12:35:35.009+02:00 DEBUG 20152 --- [onBoarding-syst] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-08-12T12:35:35.035+02:00  INFO 20152 --- [onBoarding-syst] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 4 endpoint(s) beneath base path '/actuator'
+2025-08-12T12:35:35.044+02:00  INFO 20152 --- [onBoarding-syst] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@188a869e, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4141e42e, org.springframework.security.web.context.SecurityContextHolderFilter@50d44e44, org.springframework.security.web.header.HeaderWriterFilter@56b496e1, org.springframework.web.filter.CorsFilter@8b5536a, org.springframework.security.web.authentication.logout.LogoutFilter@5c35918f, com.example.onBoarding_syst.JwtAuthFilter@178fa895, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5efcdc73, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5c10da84, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7babf668, org.springframework.security.web.access.ExceptionTranslationFilter@23b43b4b, org.springframework.security.web.access.intercept.AuthorizationFilter@6a6321dd]
+2025-08-12T12:35:35.063+02:00 DEBUG 20152 --- [onBoarding-syst] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-08-12T12:35:35.066+02:00 DEBUG 20152 --- [onBoarding-syst] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-08-12T12:35:35.103+02:00  INFO 20152 --- [onBoarding-syst] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path ''
+2025-08-12T12:35:35.108+02:00  INFO 20152 --- [onBoarding-syst] [restartedMain] c.e.o.OnBoardingSystApplication          : Started OnBoardingSystApplication in 0.596 seconds (process running for 663.98)
+2025-08-12T12:35:35.110+02:00  INFO 20152 --- [onBoarding-syst] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-08-12T12:35:42.882+02:00  INFO 20152 --- [onBoarding-syst] [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-12T12:35:42.884+02:00  INFO 20152 --- [onBoarding-syst] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-12T12:35:42.884+02:00 DEBUG 20152 --- [onBoarding-syst] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2025-08-12T12:35:42.889+02:00 DEBUG 20152 --- [onBoarding-syst] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2025-08-12T12:35:42.889+02:00 DEBUG 20152 --- [onBoarding-syst] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2025-08-12T12:35:42.894+02:00 DEBUG 20152 --- [onBoarding-syst] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@7a8dc206
+2025-08-12T12:35:42.895+02:00 DEBUG 20152 --- [onBoarding-syst] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@744a3327
+2025-08-12T12:35:42.895+02:00 DEBUG 20152 --- [onBoarding-syst] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-08-12T12:35:42.895+02:00  INFO 20152 --- [onBoarding-syst] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 11 ms
+2025-08-12T12:36:04.767+02:00 DEBUG 20152 --- [onBoarding-syst] [http-nio-8081-exec-4] o.s.web.servlet.DispatcherServlet        : POST "/api/auth/login", parameters={}
+2025-08-12T12:36:04.768+02:00 DEBUG 20152 --- [onBoarding-syst] [http-nio-8081-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.onBoarding_syst.controller.AuthController#login(LoginDTO)
+2025-08-12T12:36:04.773+02:00 DEBUG 20152 --- [onBoarding-syst] [http-nio-8081-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.example.onBoarding_syst.model.LoginDTO@116a88aa]
+2025-08-12T12:36:04.780+02:00 DEBUG 20152 --- [onBoarding-syst] [http-nio-8081-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-08-12T12:36:04.781+02:00 DEBUG 20152 --- [onBoarding-syst] [http-nio-8081-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.example.onBoarding_syst.controller.Risposta@287ba10c]
+2025-08-12T12:36:04.782+02:00 DEBUG 20152 --- [onBoarding-syst] [http-nio-8081-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-08-12T12:37:11.741+02:00  INFO 20152 --- [onBoarding-syst] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-08-12T12:37:11.855+02:00  INFO 20152 --- [onBoarding-syst] [restartedMain] c.e.o.OnBoardingSystApplication          : Starting OnBoardingSystApplication using Java 21.0.6 with PID 20152 (C:\Users\a.carbone\Desktop\Gest_OnBording_Clienti\target\classes started by a.carbone in C:\Users\a.carbone\Desktop\Gest_OnBording_Clienti)
+2025-08-12T12:37:11.857+02:00 DEBUG 20152 --- [onBoarding-syst] [restartedMain] c.e.o.OnBoardingSystApplication          : Running with Spring Boot v3.2.5, Spring v6.1.6
+2025-08-12T12:37:11.857+02:00  INFO 20152 --- [onBoarding-syst] [restartedMain] c.e.o.OnBoardingSystApplication          : No active profile set, falling back to 1 default profile: "default"
+2025-08-12T12:37:12.078+02:00  INFO 20152 --- [onBoarding-syst] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2025-08-12T12:37:12.086+02:00  INFO 20152 --- [onBoarding-syst] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 1 MongoDB repository interface.
+2025-08-12T12:37:12.138+02:00  INFO 20152 --- [onBoarding-syst] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-08-12T12:37:12.139+02:00  INFO 20152 --- [onBoarding-syst] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-12T12:37:12.139+02:00  INFO 20152 --- [onBoarding-syst] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2025-08-12T12:37:12.157+02:00  INFO 20152 --- [onBoarding-syst] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-12T12:37:12.158+02:00  INFO 20152 --- [onBoarding-syst] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 299 ms
+2025-08-12T12:37:12.182+02:00 DEBUG 20152 --- [onBoarding-syst] [restartedMain] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2025-08-12T12:37:12.182+02:00 DEBUG 20152 --- [onBoarding-syst] [restartedMain] c.example.onBoarding_syst.JwtAuthFilter  : Filter 'jwtAuthFilter' configured for use
+2025-08-12T12:37:12.192+02:00  INFO 20152 --- [onBoarding-syst] [restartedMain] org.mongodb.driver.client                : MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.11.2"}, "os": {"type": "Windows", "name": "Windows 11", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Eclipse Adoptium/21.0.6+7-LTS"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=null, streamFactoryFactory=null, commandListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsCommandListener@57618603], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@f917f04, com.mongodb.Jep395RecordCodecProvider@490e815, com.mongodb.KotlinCodecProvider@619850b6]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsConnectionPoolListener@3736df0a], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null}
+2025-08-12T12:37:12.205+02:00  INFO 20152 --- [onBoarding-syst] [cluster-ClusterId{value='689b195874dfe22d23c7762b', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=1814100}
+2025-08-12T12:37:12.208+02:00  INFO 20152 --- [onBoarding-syst] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-08-12T12:37:12.230+02:00  WARN 20152 --- [onBoarding-syst] [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 7fc7ce24-75c9-4f68-b180-9611c6fc6239
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-08-12T12:37:12.245+02:00 DEBUG 20152 --- [onBoarding-syst] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 10 mappings in 'requestMappingHandlerMapping'
+2025-08-12T12:37:12.255+02:00 DEBUG 20152 --- [onBoarding-syst] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-08-12T12:37:12.273+02:00  INFO 20152 --- [onBoarding-syst] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 4 endpoint(s) beneath base path '/actuator'
+2025-08-12T12:37:12.278+02:00  INFO 20152 --- [onBoarding-syst] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5f598f35, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@29491694, org.springframework.security.web.context.SecurityContextHolderFilter@658c5415, org.springframework.security.web.header.HeaderWriterFilter@4ed12a7c, org.springframework.web.filter.CorsFilter@4cd0c34b, org.springframework.security.web.authentication.logout.LogoutFilter@6e4304be, com.example.onBoarding_syst.JwtAuthFilter@3ec54038, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@400390dc, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2e2d8409, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@15868e46, org.springframework.security.web.access.ExceptionTranslationFilter@4a648499, org.springframework.security.web.access.intercept.AuthorizationFilter@70d52b5c]
+2025-08-12T12:37:12.293+02:00 DEBUG 20152 --- [onBoarding-syst] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-08-12T12:37:12.295+02:00 DEBUG 20152 --- [onBoarding-syst] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-08-12T12:37:12.330+02:00  INFO 20152 --- [onBoarding-syst] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path ''
+2025-08-12T12:37:12.334+02:00  INFO 20152 --- [onBoarding-syst] [restartedMain] c.e.o.OnBoardingSystApplication          : Started OnBoardingSystApplication in 0.511 seconds (process running for 761.206)
+2025-08-12T12:37:12.336+02:00  INFO 20152 --- [onBoarding-syst] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-08-12T12:37:13.258+02:00  INFO 20152 --- [onBoarding-syst] [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-12T12:37:13.258+02:00  INFO 20152 --- [onBoarding-syst] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-12T12:37:13.258+02:00 DEBUG 20152 --- [onBoarding-syst] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2025-08-12T12:37:13.258+02:00 DEBUG 20152 --- [onBoarding-syst] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2025-08-12T12:37:13.258+02:00 DEBUG 20152 --- [onBoarding-syst] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2025-08-12T12:37:13.259+02:00 DEBUG 20152 --- [onBoarding-syst] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@51036ab6
+2025-08-12T12:37:13.261+02:00 DEBUG 20152 --- [onBoarding-syst] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@5fc49ee6
+2025-08-12T12:37:13.262+02:00 DEBUG 20152 --- [onBoarding-syst] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-08-12T12:37:13.262+02:00  INFO 20152 --- [onBoarding-syst] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2025-08-12T12:37:28.282+02:00 DEBUG 20152 --- [onBoarding-syst] [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/api/auth/login", parameters={}
+2025-08-12T12:37:28.283+02:00 DEBUG 20152 --- [onBoarding-syst] [http-nio-8081-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.onBoarding_syst.controller.AuthController#login(LoginDTO)
+2025-08-12T12:37:28.286+02:00 DEBUG 20152 --- [onBoarding-syst] [http-nio-8081-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.example.onBoarding_syst.model.LoginDTO@1c00370a]
+2025-08-12T12:37:28.290+02:00 DEBUG 20152 --- [onBoarding-syst] [http-nio-8081-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-08-12T12:37:28.291+02:00 DEBUG 20152 --- [onBoarding-syst] [http-nio-8081-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.example.onBoarding_syst.controller.Risposta@457fe706]
+2025-08-12T12:37:28.292+02:00 DEBUG 20152 --- [onBoarding-syst] [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-08-12T12:40:05.539+02:00  INFO 20152 --- [onBoarding-syst] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-08-12T12:40:05.625+02:00  INFO 20152 --- [onBoarding-syst] [restartedMain] c.e.o.OnBoardingSystApplication          : Starting OnBoardingSystApplication using Java 21.0.6 with PID 20152 (C:\Users\a.carbone\Desktop\Gest_OnBording_Clienti\target\classes started by a.carbone in C:\Users\a.carbone\Desktop\Gest_OnBording_Clienti)
+2025-08-12T12:40:05.626+02:00 DEBUG 20152 --- [onBoarding-syst] [restartedMain] c.e.o.OnBoardingSystApplication          : Running with Spring Boot v3.2.5, Spring v6.1.6
+2025-08-12T12:40:05.626+02:00  INFO 20152 --- [onBoarding-syst] [restartedMain] c.e.o.OnBoardingSystApplication          : No active profile set, falling back to 1 default profile: "default"
+2025-08-12T12:40:05.775+02:00  INFO 20152 --- [onBoarding-syst] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2025-08-12T12:40:05.780+02:00  INFO 20152 --- [onBoarding-syst] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 1 MongoDB repository interface.
+2025-08-12T12:40:05.824+02:00  INFO 20152 --- [onBoarding-syst] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-08-12T12:40:05.824+02:00  INFO 20152 --- [onBoarding-syst] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-12T12:40:05.825+02:00  INFO 20152 --- [onBoarding-syst] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2025-08-12T12:40:05.835+02:00  INFO 20152 --- [onBoarding-syst] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-12T12:40:05.836+02:00  INFO 20152 --- [onBoarding-syst] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 209 ms
+2025-08-12T12:40:05.852+02:00 DEBUG 20152 --- [onBoarding-syst] [restartedMain] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2025-08-12T12:40:05.853+02:00 DEBUG 20152 --- [onBoarding-syst] [restartedMain] c.example.onBoarding_syst.JwtAuthFilter  : Filter 'jwtAuthFilter' configured for use
+2025-08-12T12:40:05.862+02:00  INFO 20152 --- [onBoarding-syst] [restartedMain] org.mongodb.driver.client                : MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.11.2"}, "os": {"type": "Windows", "name": "Windows 11", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Eclipse Adoptium/21.0.6+7-LTS"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=null, streamFactoryFactory=null, commandListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsCommandListener@6a357b5f], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@f917f04, com.mongodb.Jep395RecordCodecProvider@490e815, com.mongodb.KotlinCodecProvider@619850b6]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsConnectionPoolListener@3d8292a3], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null}
+2025-08-12T12:40:05.872+02:00  INFO 20152 --- [onBoarding-syst] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-08-12T12:40:05.875+02:00  INFO 20152 --- [onBoarding-syst] [cluster-ClusterId{value='689b1a0574dfe22d23c7762c', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=1389100}
+2025-08-12T12:40:05.891+02:00  WARN 20152 --- [onBoarding-syst] [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 3b1c4284-55fc-4210-8d6e-8172698dde55
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-08-12T12:40:05.901+02:00 DEBUG 20152 --- [onBoarding-syst] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 10 mappings in 'requestMappingHandlerMapping'
+2025-08-12T12:40:05.910+02:00 DEBUG 20152 --- [onBoarding-syst] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-08-12T12:40:05.930+02:00  INFO 20152 --- [onBoarding-syst] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 4 endpoint(s) beneath base path '/actuator'
+2025-08-12T12:40:05.936+02:00  INFO 20152 --- [onBoarding-syst] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@18602c8b, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@58449a9f, org.springframework.security.web.context.SecurityContextHolderFilter@4dfaa787, org.springframework.security.web.header.HeaderWriterFilter@14db20c0, org.springframework.web.filter.CorsFilter@2bfd646a, org.springframework.security.web.authentication.logout.LogoutFilter@34ae8959, com.example.onBoarding_syst.JwtAuthFilter@184aa140, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@309adcc2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@61603403, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3f30b9af, org.springframework.security.web.access.ExceptionTranslationFilter@4e43ed07, org.springframework.security.web.access.intercept.AuthorizationFilter@3214d9bb]
+2025-08-12T12:40:05.948+02:00 DEBUG 20152 --- [onBoarding-syst] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-08-12T12:40:05.951+02:00 DEBUG 20152 --- [onBoarding-syst] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-08-12T12:40:05.978+02:00  INFO 20152 --- [onBoarding-syst] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path ''
+2025-08-12T12:40:05.984+02:00  INFO 20152 --- [onBoarding-syst] [restartedMain] c.e.o.OnBoardingSystApplication          : Started OnBoardingSystApplication in 0.38 seconds (process running for 934.856)
+2025-08-12T12:40:05.986+02:00  INFO 20152 --- [onBoarding-syst] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-08-12T12:40:15.949+02:00  INFO 20152 --- [onBoarding-syst] [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-12T12:40:15.949+02:00  INFO 20152 --- [onBoarding-syst] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-12T12:40:15.949+02:00 DEBUG 20152 --- [onBoarding-syst] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2025-08-12T12:40:15.949+02:00 DEBUG 20152 --- [onBoarding-syst] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2025-08-12T12:40:15.949+02:00 DEBUG 20152 --- [onBoarding-syst] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2025-08-12T12:40:15.953+02:00 DEBUG 20152 --- [onBoarding-syst] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@3721ce32
+2025-08-12T12:40:15.954+02:00 DEBUG 20152 --- [onBoarding-syst] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@39e636a6
+2025-08-12T12:40:15.957+02:00 DEBUG 20152 --- [onBoarding-syst] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-08-12T12:40:15.957+02:00  INFO 20152 --- [onBoarding-syst] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2025-08-12T12:40:23.755+02:00  INFO 20152 --- [onBoarding-syst] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-08-12T12:40:23.851+02:00  INFO 20152 --- [onBoarding-syst] [restartedMain] c.e.o.OnBoardingSystApplication          : Starting OnBoardingSystApplication using Java 21.0.6 with PID 20152 (C:\Users\a.carbone\Desktop\Gest_OnBording_Clienti\target\classes started by a.carbone in C:\Users\a.carbone\Desktop\Gest_OnBording_Clienti)
+2025-08-12T12:40:23.852+02:00 DEBUG 20152 --- [onBoarding-syst] [restartedMain] c.e.o.OnBoardingSystApplication          : Running with Spring Boot v3.2.5, Spring v6.1.6
+2025-08-12T12:40:23.852+02:00  INFO 20152 --- [onBoarding-syst] [restartedMain] c.e.o.OnBoardingSystApplication          : No active profile set, falling back to 1 default profile: "default"
+2025-08-12T12:40:24.083+02:00  INFO 20152 --- [onBoarding-syst] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2025-08-12T12:40:24.088+02:00  INFO 20152 --- [onBoarding-syst] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 1 MongoDB repository interface.
+2025-08-12T12:40:24.142+02:00  INFO 20152 --- [onBoarding-syst] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-08-12T12:40:24.143+02:00  INFO 20152 --- [onBoarding-syst] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-12T12:40:24.143+02:00  INFO 20152 --- [onBoarding-syst] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2025-08-12T12:40:24.163+02:00  INFO 20152 --- [onBoarding-syst] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-12T12:40:24.163+02:00  INFO 20152 --- [onBoarding-syst] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 308 ms
+2025-08-12T12:40:24.189+02:00 DEBUG 20152 --- [onBoarding-syst] [restartedMain] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2025-08-12T12:40:24.189+02:00 DEBUG 20152 --- [onBoarding-syst] [restartedMain] c.example.onBoarding_syst.JwtAuthFilter  : Filter 'jwtAuthFilter' configured for use
+2025-08-12T12:40:24.203+02:00  INFO 20152 --- [onBoarding-syst] [restartedMain] org.mongodb.driver.client                : MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.11.2"}, "os": {"type": "Windows", "name": "Windows 11", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Eclipse Adoptium/21.0.6+7-LTS"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=null, streamFactoryFactory=null, commandListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsCommandListener@4f30ffa], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@f917f04, com.mongodb.Jep395RecordCodecProvider@490e815, com.mongodb.KotlinCodecProvider@619850b6]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsConnectionPoolListener@7480478], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null}
+2025-08-12T12:40:24.219+02:00  INFO 20152 --- [onBoarding-syst] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-08-12T12:40:24.221+02:00  INFO 20152 --- [onBoarding-syst] [cluster-ClusterId{value='689b1a1874dfe22d23c7762d', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=3560000}
+2025-08-12T12:40:24.252+02:00  WARN 20152 --- [onBoarding-syst] [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 85dccff7-a247-442a-9e16-d67ca0150c70
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-08-12T12:40:24.265+02:00 DEBUG 20152 --- [onBoarding-syst] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 10 mappings in 'requestMappingHandlerMapping'
+2025-08-12T12:40:24.280+02:00 DEBUG 20152 --- [onBoarding-syst] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-08-12T12:40:24.309+02:00  INFO 20152 --- [onBoarding-syst] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 4 endpoint(s) beneath base path '/actuator'
+2025-08-12T12:40:24.316+02:00  INFO 20152 --- [onBoarding-syst] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5eda3704, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2f74b8c2, org.springframework.security.web.context.SecurityContextHolderFilter@4c6502ab, org.springframework.security.web.header.HeaderWriterFilter@431a45ea, org.springframework.web.filter.CorsFilter@5379b623, org.springframework.security.web.authentication.logout.LogoutFilter@5e05fb56, com.example.onBoarding_syst.JwtAuthFilter@63494b4e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4aff5516, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2bb5e36c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7a8a2458, org.springframework.security.web.access.ExceptionTranslationFilter@154e8ca1, org.springframework.security.web.access.intercept.AuthorizationFilter@6ac86246]
+2025-08-12T12:40:24.332+02:00 DEBUG 20152 --- [onBoarding-syst] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-08-12T12:40:24.334+02:00 DEBUG 20152 --- [onBoarding-syst] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-08-12T12:40:24.380+02:00  INFO 20152 --- [onBoarding-syst] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path ''
+2025-08-12T12:40:24.387+02:00  INFO 20152 --- [onBoarding-syst] [restartedMain] c.e.o.OnBoardingSystApplication          : Started OnBoardingSystApplication in 0.564 seconds (process running for 953.259)
+2025-08-12T12:40:24.389+02:00  INFO 20152 --- [onBoarding-syst] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-08-12T12:40:34.891+02:00  INFO 20152 --- [onBoarding-syst] [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-12T12:40:34.891+02:00  INFO 20152 --- [onBoarding-syst] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-12T12:40:34.891+02:00 DEBUG 20152 --- [onBoarding-syst] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2025-08-12T12:40:34.891+02:00 DEBUG 20152 --- [onBoarding-syst] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2025-08-12T12:40:34.891+02:00 DEBUG 20152 --- [onBoarding-syst] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2025-08-12T12:40:34.892+02:00 DEBUG 20152 --- [onBoarding-syst] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@5af2e1f7
+2025-08-12T12:40:34.893+02:00 DEBUG 20152 --- [onBoarding-syst] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@543504d9
+2025-08-12T12:40:34.893+02:00 DEBUG 20152 --- [onBoarding-syst] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-08-12T12:40:34.893+02:00  INFO 20152 --- [onBoarding-syst] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-08-12T12:40:34.895+02:00 DEBUG 20152 --- [onBoarding-syst] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/api/auth/login", parameters={}
+2025-08-12T12:40:34.896+02:00 DEBUG 20152 --- [onBoarding-syst] [http-nio-8081-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.onBoarding_syst.controller.AuthController#login(LoginDTO)
+2025-08-12T12:40:34.898+02:00 DEBUG 20152 --- [onBoarding-syst] [http-nio-8081-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.example.onBoarding_syst.model.LoginDTO@723b23a5]
+2025-08-12T12:40:34.902+02:00 DEBUG 20152 --- [onBoarding-syst] [http-nio-8081-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-08-12T12:40:34.902+02:00 DEBUG 20152 --- [onBoarding-syst] [http-nio-8081-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.example.onBoarding_syst.controller.Risposta@440c770d]
+2025-08-12T12:40:34.903+02:00 DEBUG 20152 --- [onBoarding-syst] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-08-12T12:50:29.650+02:00 DEBUG 20152 --- [onBoarding-syst] [http-nio-8081-exec-10] o.s.web.servlet.DispatcherServlet        : POST "/api/auth/login", parameters={}
+2025-08-12T12:50:29.651+02:00 DEBUG 20152 --- [onBoarding-syst] [http-nio-8081-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.onBoarding_syst.controller.AuthController#login(LoginDTO)
+2025-08-12T12:50:29.652+02:00 DEBUG 20152 --- [onBoarding-syst] [http-nio-8081-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.example.onBoarding_syst.model.LoginDTO@5453c4ad]
+2025-08-12T12:50:29.653+02:00 DEBUG 20152 --- [onBoarding-syst] [http-nio-8081-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-08-12T12:50:29.654+02:00 DEBUG 20152 --- [onBoarding-syst] [http-nio-8081-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.example.onBoarding_syst.controller.Risposta@754131d9]
+2025-08-12T12:50:29.655+02:00 DEBUG 20152 --- [onBoarding-syst] [http-nio-8081-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-08-12T12:54:38.802+02:00 DEBUG 20152 --- [onBoarding-syst] [http-nio-8081-exec-10] o.s.web.servlet.DispatcherServlet        : POST "/api/auth/login", parameters={}
+2025-08-12T12:54:38.803+02:00 DEBUG 20152 --- [onBoarding-syst] [http-nio-8081-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.onBoarding_syst.controller.AuthController#login(LoginDTO)
+2025-08-12T12:54:38.804+02:00 DEBUG 20152 --- [onBoarding-syst] [http-nio-8081-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.example.onBoarding_syst.model.LoginDTO@77a1b8e9]
+2025-08-12T12:54:38.806+02:00 DEBUG 20152 --- [onBoarding-syst] [http-nio-8081-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-08-12T12:54:38.806+02:00 DEBUG 20152 --- [onBoarding-syst] [http-nio-8081-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.example.onBoarding_syst.controller.Risposta@4056317b]
+2025-08-12T12:54:38.808+02:00 DEBUG 20152 --- [onBoarding-syst] [http-nio-8081-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-08-12T12:59:26.395+02:00 DEBUG 20152 --- [onBoarding-syst] [http-nio-8081-exec-8] o.s.web.servlet.DispatcherServlet        : POST "/api/auth/login", parameters={}
+2025-08-12T12:59:26.395+02:00 DEBUG 20152 --- [onBoarding-syst] [http-nio-8081-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.onBoarding_syst.controller.AuthController#login(LoginDTO)
+2025-08-12T12:59:26.396+02:00 DEBUG 20152 --- [onBoarding-syst] [http-nio-8081-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.example.onBoarding_syst.model.LoginDTO@431b99ad]
+2025-08-12T12:59:26.397+02:00 DEBUG 20152 --- [onBoarding-syst] [http-nio-8081-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-08-12T12:59:26.397+02:00 DEBUG 20152 --- [onBoarding-syst] [http-nio-8081-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.example.onBoarding_syst.controller.Risposta@62096cd9]
+2025-08-12T12:59:26.398+02:00 DEBUG 20152 --- [onBoarding-syst] [http-nio-8081-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-08-12T13:01:06.586+02:00  INFO 20152 --- [onBoarding-syst] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-08-12T13:01:06.679+02:00  INFO 20152 --- [onBoarding-syst] [restartedMain] c.e.o.OnBoardingSystApplication          : Starting OnBoardingSystApplication using Java 21.0.6 with PID 20152 (C:\Users\a.carbone\Desktop\Gest_OnBording_Clienti\target\classes started by a.carbone in C:\Users\a.carbone\Desktop\Gest_OnBording_Clienti)
+2025-08-12T13:01:06.680+02:00 DEBUG 20152 --- [onBoarding-syst] [restartedMain] c.e.o.OnBoardingSystApplication          : Running with Spring Boot v3.2.5, Spring v6.1.6
+2025-08-12T13:01:06.680+02:00  INFO 20152 --- [onBoarding-syst] [restartedMain] c.e.o.OnBoardingSystApplication          : No active profile set, falling back to 1 default profile: "default"
+2025-08-12T13:01:06.846+02:00  INFO 20152 --- [onBoarding-syst] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2025-08-12T13:01:06.851+02:00  INFO 20152 --- [onBoarding-syst] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 1 MongoDB repository interface.
+2025-08-12T13:01:06.906+02:00  INFO 20152 --- [onBoarding-syst] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-08-12T13:01:06.907+02:00  INFO 20152 --- [onBoarding-syst] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-12T13:01:06.907+02:00  INFO 20152 --- [onBoarding-syst] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2025-08-12T13:01:06.919+02:00  INFO 20152 --- [onBoarding-syst] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-12T13:01:06.919+02:00  INFO 20152 --- [onBoarding-syst] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 237 ms
+2025-08-12T13:01:06.939+02:00 DEBUG 20152 --- [onBoarding-syst] [restartedMain] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2025-08-12T13:01:06.939+02:00 DEBUG 20152 --- [onBoarding-syst] [restartedMain] c.example.onBoarding_syst.JwtAuthFilter  : Filter 'jwtAuthFilter' configured for use
+2025-08-12T13:01:06.950+02:00  INFO 20152 --- [onBoarding-syst] [restartedMain] org.mongodb.driver.client                : MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.11.2"}, "os": {"type": "Windows", "name": "Windows 11", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Eclipse Adoptium/21.0.6+7-LTS"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=null, streamFactoryFactory=null, commandListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsCommandListener@465f6660], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@f917f04, com.mongodb.Jep395RecordCodecProvider@490e815, com.mongodb.KotlinCodecProvider@619850b6]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsConnectionPoolListener@2164a421], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null}
+2025-08-12T13:01:06.965+02:00  INFO 20152 --- [onBoarding-syst] [cluster-ClusterId{value='689b1ef274dfe22d23c7762e', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=2439000}
+2025-08-12T13:01:06.965+02:00  INFO 20152 --- [onBoarding-syst] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-08-12T13:01:06.991+02:00  WARN 20152 --- [onBoarding-syst] [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 2a94bed8-13f1-45f2-a720-ca668e680a12
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-08-12T13:01:07.006+02:00 DEBUG 20152 --- [onBoarding-syst] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 10 mappings in 'requestMappingHandlerMapping'
+2025-08-12T13:01:07.023+02:00 DEBUG 20152 --- [onBoarding-syst] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-08-12T13:01:07.053+02:00  INFO 20152 --- [onBoarding-syst] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 4 endpoint(s) beneath base path '/actuator'
+2025-08-12T13:01:07.068+02:00  INFO 20152 --- [onBoarding-syst] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@d486f60, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@24c7ac22, org.springframework.security.web.context.SecurityContextHolderFilter@37f63b39, org.springframework.security.web.header.HeaderWriterFilter@297f50f7, org.springframework.web.filter.CorsFilter@733b544c, org.springframework.security.web.authentication.logout.LogoutFilter@35202601, com.example.onBoarding_syst.JwtAuthFilter@5a2c31f2, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5bf013a2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@60a2f0b1, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@31e21c52, org.springframework.security.web.access.ExceptionTranslationFilter@28e2616c, org.springframework.security.web.access.intercept.AuthorizationFilter@51f27d24]
+2025-08-12T13:01:07.094+02:00 DEBUG 20152 --- [onBoarding-syst] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-08-12T13:01:07.098+02:00 DEBUG 20152 --- [onBoarding-syst] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-08-12T13:01:07.207+02:00  INFO 20152 --- [onBoarding-syst] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path ''
+2025-08-12T13:01:07.211+02:00  INFO 20152 --- [onBoarding-syst] [restartedMain] c.e.o.OnBoardingSystApplication          : Started OnBoardingSystApplication in 0.559 seconds (process running for 2196.083)
+2025-08-12T13:01:07.225+02:00  INFO 20152 --- [onBoarding-syst] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-08-12T13:01:40.884+02:00  INFO 20152 --- [onBoarding-syst] [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-12T13:01:40.885+02:00  INFO 20152 --- [onBoarding-syst] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-12T13:01:40.885+02:00 DEBUG 20152 --- [onBoarding-syst] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2025-08-12T13:01:40.885+02:00 DEBUG 20152 --- [onBoarding-syst] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2025-08-12T13:01:40.885+02:00 DEBUG 20152 --- [onBoarding-syst] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2025-08-12T13:01:40.889+02:00 DEBUG 20152 --- [onBoarding-syst] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@7fa41afe
+2025-08-12T13:01:40.891+02:00 DEBUG 20152 --- [onBoarding-syst] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@7163eb7a
+2025-08-12T13:01:40.891+02:00 DEBUG 20152 --- [onBoarding-syst] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-08-12T13:01:40.891+02:00  INFO 20152 --- [onBoarding-syst] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2025-08-12T14:01:20.432+02:00 DEBUG 20152 --- [onBoarding-syst] [http-nio-8081-exec-5] o.s.web.servlet.DispatcherServlet        : POST "/api/auth/login", parameters={}
+2025-08-12T14:01:20.434+02:00 DEBUG 20152 --- [onBoarding-syst] [http-nio-8081-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.onBoarding_syst.controller.AuthController#login(LoginDTO)
+2025-08-12T14:01:20.439+02:00 DEBUG 20152 --- [onBoarding-syst] [http-nio-8081-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.example.onBoarding_syst.model.LoginDTO@4ac7b92d]
+2025-08-12T14:01:20.447+02:00 DEBUG 20152 --- [onBoarding-syst] [http-nio-8081-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-08-12T14:01:20.448+02:00 DEBUG 20152 --- [onBoarding-syst] [http-nio-8081-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.example.onBoarding_syst.controller.Risposta@6e06b419]
+2025-08-12T14:01:20.449+02:00 DEBUG 20152 --- [onBoarding-syst] [http-nio-8081-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-08-12T14:10:29.559+02:00  INFO 20152 --- [onBoarding-syst] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-08-12T14:10:29.701+02:00  INFO 20152 --- [onBoarding-syst] [restartedMain] c.e.o.OnBoardingSystApplication          : Starting OnBoardingSystApplication using Java 21.0.6 with PID 20152 (C:\Users\a.carbone\Desktop\Gest_OnBording_Clienti\target\classes started by a.carbone in C:\Users\a.carbone\Desktop\Gest_OnBording_Clienti)
+2025-08-12T14:10:29.702+02:00 DEBUG 20152 --- [onBoarding-syst] [restartedMain] c.e.o.OnBoardingSystApplication          : Running with Spring Boot v3.2.5, Spring v6.1.6
+2025-08-12T14:10:29.702+02:00  INFO 20152 --- [onBoarding-syst] [restartedMain] c.e.o.OnBoardingSystApplication          : No active profile set, falling back to 1 default profile: "default"
+2025-08-12T14:10:29.926+02:00  INFO 20152 --- [onBoarding-syst] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2025-08-12T14:10:29.932+02:00  INFO 20152 --- [onBoarding-syst] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 1 MongoDB repository interface.
+2025-08-12T14:10:30.003+02:00  INFO 20152 --- [onBoarding-syst] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-08-12T14:10:30.004+02:00  INFO 20152 --- [onBoarding-syst] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-12T14:10:30.004+02:00  INFO 20152 --- [onBoarding-syst] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2025-08-12T14:10:30.019+02:00  INFO 20152 --- [onBoarding-syst] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-12T14:10:30.019+02:00  INFO 20152 --- [onBoarding-syst] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 314 ms
+2025-08-12T14:10:30.043+02:00 DEBUG 20152 --- [onBoarding-syst] [restartedMain] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2025-08-12T14:10:30.043+02:00 DEBUG 20152 --- [onBoarding-syst] [restartedMain] c.example.onBoarding_syst.JwtAuthFilter  : Filter 'jwtAuthFilter' configured for use
+2025-08-12T14:10:30.055+02:00  INFO 20152 --- [onBoarding-syst] [restartedMain] org.mongodb.driver.client                : MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.11.2"}, "os": {"type": "Windows", "name": "Windows 11", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Eclipse Adoptium/21.0.6+7-LTS"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=null, streamFactoryFactory=null, commandListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsCommandListener@36975688], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@f917f04, com.mongodb.Jep395RecordCodecProvider@490e815, com.mongodb.KotlinCodecProvider@619850b6]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsConnectionPoolListener@15f41674], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null}
+2025-08-12T14:10:30.068+02:00  INFO 20152 --- [onBoarding-syst] [cluster-ClusterId{value='689b2f3674dfe22d23c7762f', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=1419800}
+2025-08-12T14:10:30.075+02:00  INFO 20152 --- [onBoarding-syst] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-08-12T14:10:30.101+02:00  WARN 20152 --- [onBoarding-syst] [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 0db9de62-78a5-4edb-84a9-7aa28e45ba96
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-08-12T14:10:30.115+02:00 DEBUG 20152 --- [onBoarding-syst] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 10 mappings in 'requestMappingHandlerMapping'
+2025-08-12T14:10:30.128+02:00 DEBUG 20152 --- [onBoarding-syst] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-08-12T14:10:30.159+02:00  INFO 20152 --- [onBoarding-syst] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 4 endpoint(s) beneath base path '/actuator'
+2025-08-12T14:10:30.165+02:00  INFO 20152 --- [onBoarding-syst] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@10f13b6d, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@74ea679e, org.springframework.security.web.context.SecurityContextHolderFilter@25f91f54, org.springframework.security.web.header.HeaderWriterFilter@280ef6fa, org.springframework.web.filter.CorsFilter@e31c6c3, org.springframework.security.web.authentication.logout.LogoutFilter@7b5d8dfa, com.example.onBoarding_syst.JwtAuthFilter@5f9a81bf, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@44d2a66a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@49d5a531, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@484f6e57, org.springframework.security.web.access.ExceptionTranslationFilter@2d0401c0, org.springframework.security.web.access.intercept.AuthorizationFilter@56f20943]
+2025-08-12T14:10:30.182+02:00 DEBUG 20152 --- [onBoarding-syst] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-08-12T14:10:30.185+02:00 DEBUG 20152 --- [onBoarding-syst] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-08-12T14:10:30.221+02:00  INFO 20152 --- [onBoarding-syst] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path ''
+2025-08-12T14:10:30.227+02:00  INFO 20152 --- [onBoarding-syst] [restartedMain] c.e.o.OnBoardingSystApplication          : Started OnBoardingSystApplication in 0.576 seconds (process running for 6359.1)
+2025-08-12T14:10:30.231+02:00  INFO 20152 --- [onBoarding-syst] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-08-12T14:10:41.518+02:00  INFO 20152 --- [onBoarding-syst] [http-nio-8081-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-12T14:10:41.518+02:00  INFO 20152 --- [onBoarding-syst] [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-12T14:10:41.518+02:00 DEBUG 20152 --- [onBoarding-syst] [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2025-08-12T14:10:41.518+02:00 DEBUG 20152 --- [onBoarding-syst] [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2025-08-12T14:10:41.518+02:00 DEBUG 20152 --- [onBoarding-syst] [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2025-08-12T14:10:41.520+02:00 DEBUG 20152 --- [onBoarding-syst] [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@39ec72dc
+2025-08-12T14:10:41.520+02:00 DEBUG 20152 --- [onBoarding-syst] [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@372b9b91
+2025-08-12T14:10:41.521+02:00 DEBUG 20152 --- [onBoarding-syst] [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-08-12T14:10:41.521+02:00  INFO 20152 --- [onBoarding-syst] [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2025-08-12T14:10:41.525+02:00 DEBUG 20152 --- [onBoarding-syst] [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : POST "/api/auth/login", parameters={}
+2025-08-12T14:10:41.525+02:00 DEBUG 20152 --- [onBoarding-syst] [http-nio-8081-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.onBoarding_syst.controller.AuthController#login(LoginDTO)
+2025-08-12T14:10:41.528+02:00 DEBUG 20152 --- [onBoarding-syst] [http-nio-8081-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.example.onBoarding_syst.model.LoginDTO@724b9a00]
+2025-08-12T14:10:41.534+02:00 DEBUG 20152 --- [onBoarding-syst] [http-nio-8081-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-08-12T14:10:41.535+02:00 DEBUG 20152 --- [onBoarding-syst] [http-nio-8081-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.example.onBoarding_syst.controller.Risposta@10fb4311]
+2025-08-12T14:10:41.539+02:00 DEBUG 20152 --- [onBoarding-syst] [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-08-12T14:17:40.232+02:00  INFO 20152 --- [onBoarding-syst] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-08-12T14:17:40.325+02:00  INFO 20152 --- [onBoarding-syst] [restartedMain] c.e.o.OnBoardingSystApplication          : Starting OnBoardingSystApplication using Java 21.0.6 with PID 20152 (C:\Users\a.carbone\Desktop\Gest_OnBording_Clienti\target\classes started by a.carbone in C:\Users\a.carbone\Desktop\Gest_OnBording_Clienti)
+2025-08-12T14:17:40.326+02:00 DEBUG 20152 --- [onBoarding-syst] [restartedMain] c.e.o.OnBoardingSystApplication          : Running with Spring Boot v3.2.5, Spring v6.1.6
+2025-08-12T14:17:40.326+02:00  INFO 20152 --- [onBoarding-syst] [restartedMain] c.e.o.OnBoardingSystApplication          : No active profile set, falling back to 1 default profile: "default"
+2025-08-12T14:17:40.504+02:00  INFO 20152 --- [onBoarding-syst] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2025-08-12T14:17:40.509+02:00  INFO 20152 --- [onBoarding-syst] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 1 MongoDB repository interface.
+2025-08-12T14:17:40.553+02:00  INFO 20152 --- [onBoarding-syst] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-08-12T14:17:40.554+02:00  INFO 20152 --- [onBoarding-syst] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-12T14:17:40.554+02:00  INFO 20152 --- [onBoarding-syst] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2025-08-12T14:17:40.567+02:00  INFO 20152 --- [onBoarding-syst] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-12T14:17:40.567+02:00  INFO 20152 --- [onBoarding-syst] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 239 ms
+2025-08-12T14:17:40.583+02:00 DEBUG 20152 --- [onBoarding-syst] [restartedMain] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2025-08-12T14:17:40.583+02:00 DEBUG 20152 --- [onBoarding-syst] [restartedMain] c.example.onBoarding_syst.JwtAuthFilter  : Filter 'jwtAuthFilter' configured for use
+2025-08-12T14:17:40.591+02:00  INFO 20152 --- [onBoarding-syst] [restartedMain] org.mongodb.driver.client                : MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.11.2"}, "os": {"type": "Windows", "name": "Windows 11", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Eclipse Adoptium/21.0.6+7-LTS"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=null, streamFactoryFactory=null, commandListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsCommandListener@5f1a8561], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@f917f04, com.mongodb.Jep395RecordCodecProvider@490e815, com.mongodb.KotlinCodecProvider@619850b6]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsConnectionPoolListener@685aa0f1], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null}
+2025-08-12T14:17:40.599+02:00  INFO 20152 --- [onBoarding-syst] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-08-12T14:17:40.603+02:00  INFO 20152 --- [onBoarding-syst] [cluster-ClusterId{value='689b30e474dfe22d23c77630', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=1542200}
+2025-08-12T14:17:40.618+02:00  WARN 20152 --- [onBoarding-syst] [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: c0102e80-bfef-4adf-af73-96062a5bcc34
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-08-12T14:17:40.629+02:00 DEBUG 20152 --- [onBoarding-syst] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 10 mappings in 'requestMappingHandlerMapping'
+2025-08-12T14:17:40.639+02:00 DEBUG 20152 --- [onBoarding-syst] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-08-12T14:17:40.662+02:00  INFO 20152 --- [onBoarding-syst] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 4 endpoint(s) beneath base path '/actuator'
+2025-08-12T14:17:40.669+02:00  INFO 20152 --- [onBoarding-syst] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6bea041, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7df9045, org.springframework.security.web.context.SecurityContextHolderFilter@43e4fd71, org.springframework.security.web.header.HeaderWriterFilter@162e9e, org.springframework.web.filter.CorsFilter@2f2eb58, org.springframework.security.web.authentication.logout.LogoutFilter@3205813, com.example.onBoarding_syst.JwtAuthFilter@9b90c32, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@28c0278d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5698886d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5c3b1985, org.springframework.security.web.access.ExceptionTranslationFilter@57452c74, org.springframework.security.web.access.intercept.AuthorizationFilter@38bcd566]
+2025-08-12T14:17:40.681+02:00 DEBUG 20152 --- [onBoarding-syst] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-08-12T14:17:40.683+02:00 DEBUG 20152 --- [onBoarding-syst] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-08-12T14:17:40.717+02:00  INFO 20152 --- [onBoarding-syst] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path ''
+2025-08-12T14:17:40.724+02:00  INFO 20152 --- [onBoarding-syst] [restartedMain] c.e.o.OnBoardingSystApplication          : Started OnBoardingSystApplication in 0.425 seconds (process running for 6789.596)
+2025-08-12T14:17:40.726+02:00  INFO 20152 --- [onBoarding-syst] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-08-12T14:17:52.426+02:00  INFO 20152 --- [onBoarding-syst] [RMI TCP Connection(99)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-08-12T14:17:56.079+02:00  INFO 2088 --- [onBoarding-syst] [restartedMain] c.e.o.OnBoardingSystApplication          : Starting OnBoardingSystApplication using Java 21.0.6 with PID 2088 (C:\Users\a.carbone\Desktop\Gest_OnBording_Clienti\target\classes started by a.carbone in C:\Users\a.carbone\Desktop\Gest_OnBording_Clienti)
+2025-08-12T14:17:56.080+02:00 DEBUG 2088 --- [onBoarding-syst] [restartedMain] c.e.o.OnBoardingSystApplication          : Running with Spring Boot v3.2.5, Spring v6.1.6
+2025-08-12T14:17:56.081+02:00  INFO 2088 --- [onBoarding-syst] [restartedMain] c.e.o.OnBoardingSystApplication          : No active profile set, falling back to 1 default profile: "default"
+2025-08-12T14:17:56.114+02:00  INFO 2088 --- [onBoarding-syst] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-08-12T14:17:56.114+02:00  INFO 2088 --- [onBoarding-syst] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-08-12T14:17:56.906+02:00  INFO 2088 --- [onBoarding-syst] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2025-08-12T14:17:56.951+02:00  INFO 2088 --- [onBoarding-syst] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 41 ms. Found 1 MongoDB repository interface.
+2025-08-12T14:17:57.341+02:00  INFO 2088 --- [onBoarding-syst] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-08-12T14:17:57.354+02:00  INFO 2088 --- [onBoarding-syst] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-12T14:17:57.355+02:00  INFO 2088 --- [onBoarding-syst] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2025-08-12T14:17:57.406+02:00  INFO 2088 --- [onBoarding-syst] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-12T14:17:57.407+02:00  INFO 2088 --- [onBoarding-syst] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1292 ms
+2025-08-12T14:17:57.524+02:00 DEBUG 2088 --- [onBoarding-syst] [restartedMain] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2025-08-12T14:17:57.524+02:00 DEBUG 2088 --- [onBoarding-syst] [restartedMain] c.example.onBoarding_syst.JwtAuthFilter  : Filter 'jwtAuthFilter' configured for use
+2025-08-12T14:17:57.633+02:00  INFO 2088 --- [onBoarding-syst] [restartedMain] org.mongodb.driver.client                : MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.11.2"}, "os": {"type": "Windows", "name": "Windows 11", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Eclipse Adoptium/21.0.6+7-LTS"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=null, streamFactoryFactory=null, commandListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsCommandListener@3f8f6f69], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@4f011a6a, com.mongodb.Jep395RecordCodecProvider@78703438, com.mongodb.KotlinCodecProvider@5bdb8dae]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsConnectionPoolListener@1f6b559b], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null}
+2025-08-12T14:17:57.683+02:00  INFO 2088 --- [onBoarding-syst] [cluster-ClusterId{value='689b30f58af5be670268e255', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=34916900}
+2025-08-12T14:17:57.766+02:00  INFO 2088 --- [onBoarding-syst] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-08-12T14:17:57.947+02:00  WARN 2088 --- [onBoarding-syst] [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: cb500667-ec0e-4589-8bb3-a9defb2f16f8
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-08-12T14:17:58.068+02:00 DEBUG 2088 --- [onBoarding-syst] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 10 mappings in 'requestMappingHandlerMapping'
+2025-08-12T14:17:58.121+02:00 DEBUG 2088 --- [onBoarding-syst] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-08-12T14:17:58.226+02:00  INFO 2088 --- [onBoarding-syst] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 4 endpoint(s) beneath base path '/actuator'
+2025-08-12T14:17:58.260+02:00  INFO 2088 --- [onBoarding-syst] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4f69ecd5, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5f6c05a, org.springframework.security.web.context.SecurityContextHolderFilter@19c52392, org.springframework.security.web.header.HeaderWriterFilter@18e95b5f, org.springframework.web.filter.CorsFilter@6e3f3da8, org.springframework.security.web.authentication.logout.LogoutFilter@318d5b64, com.example.onBoarding_syst.JwtAuthFilter@49dae6fb, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@24d2c496, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@73532de1, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@14a8c96e, org.springframework.security.web.access.ExceptionTranslationFilter@7b7b1d7c, org.springframework.security.web.access.intercept.AuthorizationFilter@61d57002]
+2025-08-12T14:17:58.311+02:00 DEBUG 2088 --- [onBoarding-syst] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-08-12T14:17:58.334+02:00 DEBUG 2088 --- [onBoarding-syst] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-08-12T14:17:58.472+02:00  INFO 2088 --- [onBoarding-syst] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path ''
+2025-08-12T14:17:58.479+02:00  INFO 2088 --- [onBoarding-syst] [restartedMain] c.e.o.OnBoardingSystApplication          : Started OnBoardingSystApplication in 2.681 seconds (process running for 3.245)
+2025-08-12T14:17:59.129+02:00  INFO 2088 --- [onBoarding-syst] [RMI TCP Connection(7)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-12T14:17:59.129+02:00  INFO 2088 --- [onBoarding-syst] [RMI TCP Connection(7)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-12T14:17:59.130+02:00 DEBUG 2088 --- [onBoarding-syst] [RMI TCP Connection(7)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2025-08-12T14:17:59.130+02:00 DEBUG 2088 --- [onBoarding-syst] [RMI TCP Connection(7)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2025-08-12T14:17:59.130+02:00 DEBUG 2088 --- [onBoarding-syst] [RMI TCP Connection(7)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2025-08-12T14:17:59.130+02:00 DEBUG 2088 --- [onBoarding-syst] [RMI TCP Connection(7)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@43a50dc0
+2025-08-12T14:17:59.132+02:00 DEBUG 2088 --- [onBoarding-syst] [RMI TCP Connection(7)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@36d77dcd
+2025-08-12T14:17:59.133+02:00 DEBUG 2088 --- [onBoarding-syst] [RMI TCP Connection(7)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-08-12T14:17:59.133+02:00  INFO 2088 --- [onBoarding-syst] [RMI TCP Connection(7)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2025-08-12T14:18:25.060+02:00 DEBUG 2088 --- [onBoarding-syst] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/api/auth/login", parameters={}
+2025-08-12T14:18:25.062+02:00 DEBUG 2088 --- [onBoarding-syst] [http-nio-8081-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.onBoarding_syst.controller.AuthController#login(LoginDTO)
+2025-08-12T14:18:25.093+02:00 DEBUG 2088 --- [onBoarding-syst] [http-nio-8081-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.example.onBoarding_syst.model.LoginDTO@3d3278ec]
+2025-08-12T14:18:25.118+02:00 DEBUG 2088 --- [onBoarding-syst] [http-nio-8081-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-08-12T14:18:25.120+02:00 DEBUG 2088 --- [onBoarding-syst] [http-nio-8081-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.example.onBoarding_syst.controller.Risposta@3417cc4]
+2025-08-12T14:18:25.126+02:00 DEBUG 2088 --- [onBoarding-syst] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-08-12T14:19:15.171+02:00 DEBUG 2088 --- [onBoarding-syst] [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/api/auth/login", parameters={}
+2025-08-12T14:19:15.172+02:00 DEBUG 2088 --- [onBoarding-syst] [http-nio-8081-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.onBoarding_syst.controller.AuthController#login(LoginDTO)
+2025-08-12T14:19:15.174+02:00 DEBUG 2088 --- [onBoarding-syst] [http-nio-8081-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.example.onBoarding_syst.model.LoginDTO@78bc59d0]
+2025-08-12T14:19:15.176+02:00 DEBUG 2088 --- [onBoarding-syst] [http-nio-8081-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-08-12T14:19:15.177+02:00 DEBUG 2088 --- [onBoarding-syst] [http-nio-8081-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.example.onBoarding_syst.controller.Risposta@59aeaca4]
+2025-08-12T14:19:15.178+02:00 DEBUG 2088 --- [onBoarding-syst] [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-08-12T14:19:46.851+02:00 DEBUG 2088 --- [onBoarding-syst] [http-nio-8081-exec-6] o.s.web.servlet.DispatcherServlet        : POST "/api/auth/login", parameters={}
+2025-08-12T14:19:46.853+02:00 DEBUG 2088 --- [onBoarding-syst] [http-nio-8081-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.onBoarding_syst.controller.AuthController#login(LoginDTO)
+2025-08-12T14:19:46.855+02:00 DEBUG 2088 --- [onBoarding-syst] [http-nio-8081-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.example.onBoarding_syst.model.LoginDTO@1ba2d55c]
+2025-08-12T14:19:46.858+02:00 DEBUG 2088 --- [onBoarding-syst] [http-nio-8081-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-08-12T14:19:46.858+02:00 DEBUG 2088 --- [onBoarding-syst] [http-nio-8081-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.example.onBoarding_syst.controller.Risposta@3ab02028]
+2025-08-12T14:19:46.859+02:00 DEBUG 2088 --- [onBoarding-syst] [http-nio-8081-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-08-12T14:25:29.195+02:00 DEBUG 2088 --- [onBoarding-syst] [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/api/clienti", parameters={}
+2025-08-12T14:25:29.196+02:00 DEBUG 2088 --- [onBoarding-syst] [http-nio-8081-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.onBoarding_syst.controller.ClienteController#getAllClienti()
+2025-08-12T14:25:29.541+02:00 DEBUG 2088 --- [onBoarding-syst] [http-nio-8081-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-08-12T14:25:29.542+02:00 DEBUG 2088 --- [onBoarding-syst] [http-nio-8081-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Writing [[com.example.onBoarding_syst.model.Cliente@6074786b, com.example.onBoarding_syst.model.Cliente@248c4 (truncated)...]
+2025-08-12T14:25:29.549+02:00 DEBUG 2088 --- [onBoarding-syst] [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-08-12T14:25:29.559+02:00 DEBUG 2088 --- [onBoarding-syst] [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/api/clienti", parameters={}
+2025-08-12T14:25:29.560+02:00 DEBUG 2088 --- [onBoarding-syst] [http-nio-8081-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.onBoarding_syst.controller.ClienteController#getAllClienti()
+2025-08-12T14:25:29.568+02:00 DEBUG 2088 --- [onBoarding-syst] [http-nio-8081-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-08-12T14:25:29.569+02:00 DEBUG 2088 --- [onBoarding-syst] [http-nio-8081-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing [[com.example.onBoarding_syst.model.Cliente@3f2a8a0c, com.example.onBoarding_syst.model.Cliente@7fab9 (truncated)...]
+2025-08-12T14:25:29.572+02:00 DEBUG 2088 --- [onBoarding-syst] [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-08-12T14:26:08.290+02:00 DEBUG 2088 --- [onBoarding-syst] [http-nio-8081-exec-6] o.s.web.servlet.DispatcherServlet        : POST "/api/auth/login", parameters={}
+2025-08-12T14:26:08.291+02:00 DEBUG 2088 --- [onBoarding-syst] [http-nio-8081-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.onBoarding_syst.controller.AuthController#login(LoginDTO)
+2025-08-12T14:26:08.292+02:00 DEBUG 2088 --- [onBoarding-syst] [http-nio-8081-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.example.onBoarding_syst.model.LoginDTO@3548028a]
+2025-08-12T14:26:08.296+02:00 DEBUG 2088 --- [onBoarding-syst] [http-nio-8081-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-08-12T14:26:08.296+02:00 DEBUG 2088 --- [onBoarding-syst] [http-nio-8081-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.example.onBoarding_syst.controller.Risposta@2dcb309]
+2025-08-12T14:26:08.298+02:00 DEBUG 2088 --- [onBoarding-syst] [http-nio-8081-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-08-12T14:26:08.324+02:00 DEBUG 2088 --- [onBoarding-syst] [http-nio-8081-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/api/clienti", parameters={}
+2025-08-12T14:26:08.327+02:00 DEBUG 2088 --- [onBoarding-syst] [http-nio-8081-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.onBoarding_syst.controller.ClienteController#getAllClienti()
+2025-08-12T14:26:08.335+02:00 DEBUG 2088 --- [onBoarding-syst] [http-nio-8081-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-08-12T14:26:08.336+02:00 DEBUG 2088 --- [onBoarding-syst] [http-nio-8081-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Writing [[com.example.onBoarding_syst.model.Cliente@2e159e72, com.example.onBoarding_syst.model.Cliente@731d0 (truncated)...]
+2025-08-12T14:26:08.337+02:00 DEBUG 2088 --- [onBoarding-syst] [http-nio-8081-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-08-12T14:26:14.632+02:00 DEBUG 2088 --- [onBoarding-syst] [http-nio-8081-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/api/clienti", parameters={}
+2025-08-12T14:26:14.633+02:00 DEBUG 2088 --- [onBoarding-syst] [http-nio-8081-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.onBoarding_syst.controller.ClienteController#getAllClienti()
+2025-08-12T14:26:14.639+02:00 DEBUG 2088 --- [onBoarding-syst] [http-nio-8081-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-08-12T14:26:14.640+02:00 DEBUG 2088 --- [onBoarding-syst] [http-nio-8081-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Writing [[com.example.onBoarding_syst.model.Cliente@63c06f67, com.example.onBoarding_syst.model.Cliente@19e7c (truncated)...]
+2025-08-12T14:26:14.642+02:00 DEBUG 2088 --- [onBoarding-syst] [http-nio-8081-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-08-12T14:26:16.450+02:00 DEBUG 2088 --- [onBoarding-syst] [http-nio-8081-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/api/clienti", parameters={}
+2025-08-12T14:26:16.450+02:00 DEBUG 2088 --- [onBoarding-syst] [http-nio-8081-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.onBoarding_syst.controller.ClienteController#getAllClienti()
+2025-08-12T14:26:16.455+02:00 DEBUG 2088 --- [onBoarding-syst] [http-nio-8081-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-08-12T14:26:16.456+02:00 DEBUG 2088 --- [onBoarding-syst] [http-nio-8081-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Writing [[com.example.onBoarding_syst.model.Cliente@673b9f0b, com.example.onBoarding_syst.model.Cliente@7ea3c (truncated)...]
+2025-08-12T14:26:16.458+02:00 DEBUG 2088 --- [onBoarding-syst] [http-nio-8081-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-08-12T14:26:19.547+02:00 DEBUG 2088 --- [onBoarding-syst] [http-nio-8081-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/api/clienti", parameters={}
+2025-08-12T14:26:19.548+02:00 DEBUG 2088 --- [onBoarding-syst] [http-nio-8081-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.onBoarding_syst.controller.ClienteController#getAllClienti()
+2025-08-12T14:26:19.554+02:00 DEBUG 2088 --- [onBoarding-syst] [http-nio-8081-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-08-12T14:26:19.555+02:00 DEBUG 2088 --- [onBoarding-syst] [http-nio-8081-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Writing [[com.example.onBoarding_syst.model.Cliente@7441c24e, com.example.onBoarding_syst.model.Cliente@906ba (truncated)...]
+2025-08-12T14:26:19.558+02:00 DEBUG 2088 --- [onBoarding-syst] [http-nio-8081-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-08-12T14:26:31.096+02:00 DEBUG 2088 --- [onBoarding-syst] [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : POST "/api/clienti", parameters={}
+2025-08-12T14:26:31.097+02:00 DEBUG 2088 --- [onBoarding-syst] [http-nio-8081-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.onBoarding_syst.controller.ClienteController#createCliente(Cliente)
+2025-08-12T14:26:31.102+02:00 DEBUG 2088 --- [onBoarding-syst] [http-nio-8081-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.example.onBoarding_syst.model.Cliente@7ab79a98]
+2025-08-12T14:26:31.168+02:00  INFO 2088 --- [onBoarding-syst] [http-nio-8081-exec-3] c.e.o.controller.ClienteController       : Creazione cliente: Fabrizio Canevari
+2025-08-12T14:26:31.207+02:00 DEBUG 2088 --- [onBoarding-syst] [http-nio-8081-exec-3] c.e.o.controller.ClienteController       : Cliente salvato: com.example.onBoarding_syst.model.Cliente@7ab79a98
+2025-08-12T14:26:31.208+02:00 DEBUG 2088 --- [onBoarding-syst] [http-nio-8081-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-08-12T14:26:31.209+02:00 DEBUG 2088 --- [onBoarding-syst] [http-nio-8081-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.example.onBoarding_syst.model.Cliente@7ab79a98]
+2025-08-12T14:26:31.211+02:00 DEBUG 2088 --- [onBoarding-syst] [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-08-12T14:26:32.298+02:00 DEBUG 2088 --- [onBoarding-syst] [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/api/clienti", parameters={}
+2025-08-12T14:26:32.300+02:00 DEBUG 2088 --- [onBoarding-syst] [http-nio-8081-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.onBoarding_syst.controller.ClienteController#getAllClienti()
+2025-08-12T14:26:32.307+02:00 DEBUG 2088 --- [onBoarding-syst] [http-nio-8081-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-08-12T14:26:32.307+02:00 DEBUG 2088 --- [onBoarding-syst] [http-nio-8081-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing [[com.example.onBoarding_syst.model.Cliente@33615ba8, com.example.onBoarding_syst.model.Cliente@a91be (truncated)...]
+2025-08-12T14:26:32.309+02:00 DEBUG 2088 --- [onBoarding-syst] [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-08-12T14:26:38.168+02:00 DEBUG 2088 --- [onBoarding-syst] [http-nio-8081-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/api/clienti", parameters={}
+2025-08-12T14:26:38.170+02:00 DEBUG 2088 --- [onBoarding-syst] [http-nio-8081-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.onBoarding_syst.controller.ClienteController#getAllClienti()
+2025-08-12T14:26:38.183+02:00 DEBUG 2088 --- [onBoarding-syst] [http-nio-8081-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-08-12T14:26:38.185+02:00 DEBUG 2088 --- [onBoarding-syst] [http-nio-8081-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Writing [[com.example.onBoarding_syst.model.Cliente@36bec563, com.example.onBoarding_syst.model.Cliente@4dd4b (truncated)...]
+2025-08-12T14:26:38.190+02:00 DEBUG 2088 --- [onBoarding-syst] [http-nio-8081-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-08-12T14:30:53.971+02:00  INFO 2088 --- [onBoarding-syst] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 14 class path changes (0 additions, 14 deletions, 0 modifications)
+2025-08-12T14:31:01.516+02:00  INFO 2088 --- [onBoarding-syst] [restartedMain] c.e.o.OnBoardingSystApplication          : Starting OnBoardingSystApplication using Java 21.0.6 with PID 2088 (C:\Users\a.carbone\Desktop\Gest_OnBording_Clienti\target\classes started by a.carbone in C:\Users\a.carbone\Desktop\Gest_OnBording_Clienti)
+2025-08-12T14:31:01.516+02:00 DEBUG 2088 --- [onBoarding-syst] [restartedMain] c.e.o.OnBoardingSystApplication          : Running with Spring Boot v3.2.5, Spring v6.1.6
+2025-08-12T14:31:01.517+02:00  INFO 2088 --- [onBoarding-syst] [restartedMain] c.e.o.OnBoardingSystApplication          : No active profile set, falling back to 1 default profile: "default"
+2025-08-12T14:31:02.298+02:00  INFO 2088 --- [onBoarding-syst] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2025-08-12T14:31:02.313+02:00  INFO 2088 --- [onBoarding-syst] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13 ms. Found 1 MongoDB repository interface.
+2025-08-12T14:31:02.682+02:00  INFO 2088 --- [onBoarding-syst] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-08-12T14:31:02.684+02:00  INFO 2088 --- [onBoarding-syst] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-12T14:31:02.684+02:00  INFO 2088 --- [onBoarding-syst] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2025-08-12T14:31:03.012+02:00  INFO 2088 --- [onBoarding-syst] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-12T14:31:03.013+02:00  INFO 2088 --- [onBoarding-syst] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1495 ms
+2025-08-12T14:31:03.150+02:00 DEBUG 2088 --- [onBoarding-syst] [restartedMain] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2025-08-12T14:31:03.233+02:00  INFO 2088 --- [onBoarding-syst] [restartedMain] org.mongodb.driver.client                : MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.11.2"}, "os": {"type": "Windows", "name": "Windows 11", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Eclipse Adoptium/21.0.6+7-LTS"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=null, streamFactoryFactory=null, commandListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsCommandListener@77dbe10b], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@4f011a6a, com.mongodb.Jep395RecordCodecProvider@78703438, com.mongodb.KotlinCodecProvider@5bdb8dae]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsConnectionPoolListener@4edd6ac4], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null}
+2025-08-12T14:31:03.258+02:00  INFO 2088 --- [onBoarding-syst] [cluster-ClusterId{value='689b34078af5be670268e258', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=3255400}
+2025-08-12T14:31:03.266+02:00  INFO 2088 --- [onBoarding-syst] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-08-12T14:31:03.487+02:00 DEBUG 2088 --- [onBoarding-syst] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 9 mappings in 'requestMappingHandlerMapping'
+2025-08-12T14:31:03.543+02:00 DEBUG 2088 --- [onBoarding-syst] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-08-12T14:31:03.562+02:00 DEBUG 2088 --- [onBoarding-syst] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-08-12T14:31:03.573+02:00 DEBUG 2088 --- [onBoarding-syst] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-08-12T14:31:03.748+02:00  WARN 2088 --- [onBoarding-syst] [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: bc8d1019-42d6-4a70-bffd-53247136c31f
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-08-12T14:31:03.758+02:00  INFO 2088 --- [onBoarding-syst] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 4 endpoint(s) beneath base path '/actuator'
+2025-08-12T14:31:03.764+02:00  INFO 2088 --- [onBoarding-syst] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7a5c3340, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@326c5377, org.springframework.security.web.context.SecurityContextHolderFilter@5487bb4f, org.springframework.security.web.header.HeaderWriterFilter@46cac456, org.springframework.web.filter.CorsFilter@27adc83d, org.springframework.security.web.csrf.CsrfFilter@3fc97c44, org.springframework.security.web.authentication.logout.LogoutFilter@d9b80c9, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@409ab9ce, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@2a7835a, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@cc873ae, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@3d82d987, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2058c6c7, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@12df1d23, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@17159744, org.springframework.security.web.access.ExceptionTranslationFilter@18a55215, org.springframework.security.web.access.intercept.AuthorizationFilter@72075ffb]
+2025-08-12T14:31:03.812+02:00  INFO 2088 --- [onBoarding-syst] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path ''
+2025-08-12T14:31:03.821+02:00  INFO 2088 --- [onBoarding-syst] [restartedMain] c.e.o.OnBoardingSystApplication          : Started OnBoardingSystApplication in 2.414 seconds (process running for 788.587)
+2025-08-12T14:31:03.830+02:00  INFO 2088 --- [onBoarding-syst] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+   ManagementWebSecurityAutoConfiguration matched:
+      - found 'session' scope (OnWebApplicationCondition)
+      - AllNestedConditions 2 matched 0 did not; NestedCondition on DefaultWebSecurityCondition.Beans @ConditionalOnMissingBean (types: org.springframework.security.web.SecurityFilterChain; SearchStrategy: all) did not find any beans; NestedCondition on DefaultWebSecurityCondition.Classes @ConditionalOnClass found required classes 'org.springframework.security.web.SecurityFilterChain', 'org.springframework.security.config.annotation.web.builders.HttpSecurity' (DefaultWebSecurityCondition)
+
+   SpringBootWebSecurityConfiguration.WebSecurityEnablerConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.security.config.annotation.web.configuration.EnableWebSecurity' (OnClassCondition)
+      - @ConditionalOnMissingBean (names: springSecurityFilterChain; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+
+Negative matches:
+-----------------
+
+    None
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2025-08-12T14:31:05.226+02:00  INFO 2088 --- [onBoarding-syst] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 11 class path changes (0 additions, 11 deletions, 0 modifications)
+2025-08-12T14:31:08.604+02:00  INFO 2088 --- [onBoarding-syst] [restartedMain] c.e.o.OnBoardingSystApplication          : Starting OnBoardingSystApplication using Java 21.0.6 with PID 2088 (C:\Users\a.carbone\Desktop\Gest_OnBording_Clienti\target\classes started by a.carbone in C:\Users\a.carbone\Desktop\Gest_OnBording_Clienti)
+2025-08-12T14:31:08.605+02:00 DEBUG 2088 --- [onBoarding-syst] [restartedMain] c.e.o.OnBoardingSystApplication          : Running with Spring Boot v3.2.5, Spring v6.1.6
+2025-08-12T14:31:08.606+02:00  INFO 2088 --- [onBoarding-syst] [restartedMain] c.e.o.OnBoardingSystApplication          : No active profile set, falling back to 1 default profile: "default"
+2025-08-12T14:31:09.152+02:00  INFO 2088 --- [onBoarding-syst] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2025-08-12T14:31:09.161+02:00  INFO 2088 --- [onBoarding-syst] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 1 MongoDB repository interface.
+2025-08-12T14:31:09.241+02:00  INFO 2088 --- [onBoarding-syst] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-08-12T14:31:09.241+02:00  INFO 2088 --- [onBoarding-syst] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-12T14:31:09.242+02:00  INFO 2088 --- [onBoarding-syst] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2025-08-12T14:31:09.263+02:00  INFO 2088 --- [onBoarding-syst] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-12T14:31:09.263+02:00  INFO 2088 --- [onBoarding-syst] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 654 ms
+2025-08-12T14:31:09.295+02:00 DEBUG 2088 --- [onBoarding-syst] [restartedMain] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2025-08-12T14:31:09.296+02:00 DEBUG 2088 --- [onBoarding-syst] [restartedMain] c.example.onBoarding_syst.JwtAuthFilter  : Filter 'jwtAuthFilter' configured for use
+2025-08-12T14:31:09.306+02:00  INFO 2088 --- [onBoarding-syst] [restartedMain] org.mongodb.driver.client                : MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.11.2"}, "os": {"type": "Windows", "name": "Windows 11", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Eclipse Adoptium/21.0.6+7-LTS"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=null, streamFactoryFactory=null, commandListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsCommandListener@2cab89b], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@4f011a6a, com.mongodb.Jep395RecordCodecProvider@78703438, com.mongodb.KotlinCodecProvider@5bdb8dae]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsConnectionPoolListener@1d8424c4], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null}
+2025-08-12T14:31:09.320+02:00  INFO 2088 --- [onBoarding-syst] [cluster-ClusterId{value='689b340d8af5be670268e25a', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=1855000}
+2025-08-12T14:31:09.320+02:00  INFO 2088 --- [onBoarding-syst] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-08-12T14:31:09.349+02:00  WARN 2088 --- [onBoarding-syst] [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: f6b63bce-4a3f-4e5e-9c55-6c0a32d8146f
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-08-12T14:31:09.365+02:00 DEBUG 2088 --- [onBoarding-syst] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 10 mappings in 'requestMappingHandlerMapping'
+2025-08-12T14:31:09.377+02:00 DEBUG 2088 --- [onBoarding-syst] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-08-12T14:31:09.404+02:00  INFO 2088 --- [onBoarding-syst] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 4 endpoint(s) beneath base path '/actuator'
+2025-08-12T14:31:09.413+02:00  INFO 2088 --- [onBoarding-syst] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2794865b, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3a4b2a51, org.springframework.security.web.context.SecurityContextHolderFilter@52e770fc, org.springframework.security.web.header.HeaderWriterFilter@224cd438, org.springframework.web.filter.CorsFilter@512de27d, org.springframework.security.web.authentication.logout.LogoutFilter@a12ea02, com.example.onBoarding_syst.JwtAuthFilter@67d0a9e3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2300ad9a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@27b2ebd7, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6f127970, org.springframework.security.web.access.ExceptionTranslationFilter@25542c49, org.springframework.security.web.access.intercept.AuthorizationFilter@1c8450b8]
+2025-08-12T14:31:09.427+02:00 DEBUG 2088 --- [onBoarding-syst] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-08-12T14:31:09.430+02:00 DEBUG 2088 --- [onBoarding-syst] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-08-12T14:31:09.469+02:00  INFO 2088 --- [onBoarding-syst] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path ''
+2025-08-12T14:31:09.476+02:00  INFO 2088 --- [onBoarding-syst] [restartedMain] c.e.o.OnBoardingSystApplication          : Started OnBoardingSystApplication in 0.934 seconds (process running for 794.241)
+2025-08-12T14:31:09.478+02:00  INFO 2088 --- [onBoarding-syst] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+    None
+
+
+Negative matches:
+-----------------
+
+   ManagementWebSecurityAutoConfiguration:
+      Did not match:
+         - AllNestedConditions 1 matched 1 did not; NestedCondition on DefaultWebSecurityCondition.Beans @ConditionalOnMissingBean (types: org.springframework.security.web.SecurityFilterChain; SearchStrategy: all) found beans of type 'org.springframework.security.web.SecurityFilterChain' securityFilterChain; NestedCondition on DefaultWebSecurityCondition.Classes @ConditionalOnClass found required classes 'org.springframework.security.web.SecurityFilterChain', 'org.springframework.security.config.annotation.web.builders.HttpSecurity' (DefaultWebSecurityCondition)
+      Matched:
+         - found 'session' scope (OnWebApplicationCondition)
+
+   SpringBootWebSecurityConfiguration.WebSecurityEnablerConfiguration:
+      Did not match:
+         - @ConditionalOnMissingBean (names: springSecurityFilterChain; SearchStrategy: all) found beans named springSecurityFilterChain (OnBeanCondition)
+      Matched:
+         - @ConditionalOnClass found required class 'org.springframework.security.config.annotation.web.configuration.EnableWebSecurity' (OnClassCondition)
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+

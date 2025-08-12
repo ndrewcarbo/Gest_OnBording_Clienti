@@ -1,6 +1,7 @@
 package com.example.onBoarding_syst.controller;
 
 import com.example.onBoarding_syst.model.Cliente;
+
 import com.example.onBoarding_syst.repositories.ClienteRepos;
 
 import jakarta.validation.Valid;
@@ -14,6 +15,9 @@ import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 //@CrossOrigin(origins = "http://localhost:4200")
 @RestController
 @RequestMapping("/api/clienti")
@@ -21,6 +25,8 @@ public class ClienteController {
 
     @Autowired
     private ClienteRepos clienteRepository;
+    
+    private static Logger log = LoggerFactory.getLogger(ClienteController.class);
 
     @GetMapping
     public List<Cliente> getAllClienti() {
@@ -33,7 +39,11 @@ public class ClienteController {
             cliente.setId(UUID.randomUUID().toString()); 
         }
     	
+    	log.info("Creazione cliente: {} {}", cliente.getNome(), cliente.getCognome());
+    	
     	Cliente clienteSalvato = clienteRepository.save(cliente);
+    	
+    	log.debug("Cliente salvato: {}", clienteSalvato);
         return ResponseEntity.ok(clienteSalvato);
     }
 
